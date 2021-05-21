@@ -1,0 +1,28 @@
+Fri, 21 May 2021 18:53:22 main.py [line:21] DEBUG This is debug message
+Fri, 21 May 2021 18:53:22 main.py [line:22] INFO This is info message
+Fri, 21 May 2021 18:53:22 main.py [line:23] WARNING This is warning message
+Fri, 21 May 2021 20:14:40 main.py [line:21] DEBUG This is debug message
+Fri, 21 May 2021 20:14:40 main.py [line:22] INFO This is info message
+Fri, 21 May 2021 20:14:40 main.py [line:23] WARNING This is warning message
+Fri, 21 May 2021 20:14:40 main.py [line:36] INFO 传入参数 :目录 [C:/Users/Administrator.IKUN-20210221YR/Desktop/test]，正则表达式[[^XXX$]+],过期天数 [7]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[2020年瑞安市面向社会公开招聘事业单位工作人员岗位一览表ss (1).xls]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[2021年温州市市级事业单位公开招聘工作人员岗位一览表b.xlsx]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[2021年温州市瓯海区事业单位公开招聘工作人员计划一览表b (1).xlsx]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[2021年温州市瓯海区事业单位公开招聘工作人员计划一览表b.xlsx]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[85d99e86250544a7ac456464308f65f0.xls]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[a465b485-9f28-4a19-b5f6-216f449711be.docx]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[bd1da8364e4a75d5df2726b80c1da79a.torrent]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[BV1yV41177Xh (1).html]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[Compressed]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[databases-incognito]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[EasyConnect.lnk]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[fiddlersetup.exe]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[Programs]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[setup_student_4.0.0.1295.exe]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[Telegram Desktop]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[台州银行股份有限公司温州分行吴碎微执行实施类执行裁定书.doc]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[微信图片_20210316195019.png]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[微信截图_20210411140527.png]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[猪猪冒险岛073.lnk]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[粉笔直播课.lnk]
+Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[迅雷.lnk]
