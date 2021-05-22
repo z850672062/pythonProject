@@ -8,6 +8,7 @@ import datetime
 import logging
 import shutil
 
+
 # reload(sys)
 # sys.setdefaultencoding('utf-8')
 
@@ -23,8 +24,8 @@ logging.info('This is info message')
 logging.warning('This is warning message')
 # 输出例子 Fri, 21 May 2021 18:51:20 main.py [line:21] DEBUG This is debug message
 
-# \d{4}-\d{2}-\d{2}输出匹配例子  :2019-02-24
 #
+#过滤名称包含XXX的文件或文件夹
 def find_file(file_dir, file_re='[^XXX$]+', expire_time=7):
     #     print sys.getdefaultencoding()
     if file_re == '':
@@ -42,15 +43,12 @@ def find_file(file_dir, file_re='[^XXX$]+', expire_time=7):
     for reg_file in all_file:
         if re.match(reg_str, reg_file):
             logging.info('正则匹配到文件：[%s]' % reg_file)
-            print(reg_file)
-    # if len(reg_file_list) <= 7:
-    #     logging.info('匹配文件数小于7个，不进行删除操作！')
-    #     return None
-    if
 
-
+            # print(reg_file)
+            reg_file_list.append(reg_file)
+    print(reg_file_list)
     # 满足过期时间的文件
-find_file("C:/Users/Administrator.IKUN-20210221YR/Desktop/test")
+find_file("D:/test")
 #     # 当前时间
 #     today = datetime.datetime.now()
 #     # n天

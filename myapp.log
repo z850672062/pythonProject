@@ -26,3 +26,43 @@ Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[微信截图_20210
 Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[猪猪冒险岛073.lnk]
 Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[粉笔直播课.lnk]
 Fri, 21 May 2021 20:14:40 main.py [line:44] INFO 正则匹配到文件：[迅雷.lnk]
+Sat, 22 May 2021 10:50:45 main.py [line:21] DEBUG This is debug message
+Sat, 22 May 2021 10:50:45 main.py [line:22] INFO This is info message
+Sat, 22 May 2021 10:50:45 main.py [line:23] WARNING This is warning message
+Sat, 22 May 2021 10:50:45 main.py [line:36] INFO 传入参数 :目录 [C:/Users/Administrator.IKUN-20210221YR/Desktop/test]，正则表达式[[^XXX$]+],过期天数 [7]
+Sat, 22 May 2021 13:47:22 main.py [line:21] DEBUG This is debug message
+Sat, 22 May 2021 13:47:22 main.py [line:22] INFO This is info message
+Sat, 22 May 2021 13:47:22 main.py [line:23] WARNING This is warning message
+Sat, 22 May 2021 13:47:22 main.py [line:36] INFO 传入参数 :目录 [C:/Users/Administrator.IKUN-20210221YR/Desktop/test]，正则表达式[[^XXX$]+],过期天数 [7]
+Sat, 22 May 2021 13:47:56 main.py [line:21] DEBUG This is debug message
+Sat, 22 May 2021 13:47:56 main.py [line:22] INFO This is info message
+Sat, 22 May 2021 13:47:56 main.py [line:23] WARNING This is warning message
+Sat, 22 May 2021 13:47:56 main.py [line:36] INFO 传入参数 :目录 [D:/test]，正则表达式[[^XXX$]+],过期天数 [7]
+Sat, 22 May 2021 13:47:56 main.py [line:44] INFO 正则匹配到文件：[公司网络拓扑20191113.vsdx]
+Sat, 22 May 2021 13:47:56 main.py [line:44] INFO 正则匹配到文件：[小鱼儿yr系统封装优化设置辅助工具V2.08.4（解压密码yrxitong.com）]
+Sat, 22 May 2021 13:47:56 main.py [line:44] INFO 正则匹配到文件：[徐翔]
+Sat, 22 May 2021 13:47:56 main.py [line:44] INFO 正则匹配到文件：[深入理解计算机系统（原书第三版）.pdf]
+Sat, 22 May 2021 13:48:14 main.py [line:21] DEBUG This is debug message
+Sat, 22 May 2021 13:48:14 main.py [line:22] INFO This is info message
+Sat, 22 May 2021 13:48:14 main.py [line:23] WARNING This is warning message
+Sat, 22 May 2021 13:48:14 main.py [line:36] INFO 传入参数 :目录 [D:/test]，正则表达式[[^XXX$]+],过期天数 [7]
+Sat, 22 May 2021 13:48:14 main.py [line:44] INFO 正则匹配到文件：[公司网络拓扑20191113.vsdx]
+Sat, 22 May 2021 13:48:14 main.py [line:44] INFO 正则匹配到文件：[小鱼儿yr系统封装优化设置辅助工具V2.08.4（解压密码yrxitong.com）]
+Sat, 22 May 2021 13:48:14 main.py [line:44] INFO 正则匹配到文件：[徐翔]
+Sat, 22 May 2021 13:48:14 main.py [line:44] INFO 正则匹配到文件：[深入理解计算机系统（原书第三版）.pdf]
+Sat, 22 May 2021 14:09:17 main.py [line:21] DEBUG This is debug message
+Sat, 22 May 2021 14:09:17 main.py [line:22] INFO This is info message
+Sat, 22 May 2021 14:09:17 main.py [line:23] WARNING This is warning message
+Sat, 22 May 2021 14:09:17 main.py [line:36] INFO 传入参数 :目录 [D:/test]，正则表达式[[^XXX$]+],过期天数 [7]
+Sat, 22 May 2021 14:09:17 main.py [line:45] INFO 正则匹配到文件：[公司网络拓扑20191113.vsdx]
+Sat, 22 May 2021 14:09:17 main.py [line:45] INFO 正则匹配到文件：[小鱼儿yr系统封装优化设置辅助工具V2.08.4（解压密码yrxitong.com）]
+Sat, 22 May 2021 14:09:17 main.py [line:45] INFO 正则匹配到文件：[徐翔]
+Sat, 22 May 2021 14:09:17 main.py [line:45] INFO 正则匹配到文件：[深入理解计算机系统（原书第三版）.pdf]
+Sat, 22 May 2021 14:10:58 main.py [line:21] DEBUG This is debug message
+Sat, 22 May 2021 14:10:58 main.py [line:22] INFO This is info message
+Sat, 22 May 2021 14:10:58 main.py [line:23] WARNING This is warning message
+Sat, 22 May 2021 14:10:58 main.py [line:36] INFO 传入参数 :目录 [D:/test]，正则表达式[[^XXX$]+],过期天数 [7]
+Sat, 22 May 2021 14:10:58 main.py [line:46] INFO 正则匹配到文件：[公司网络拓扑20191113.vsdx]
+Sat, 22 May 2021 14:10:58 main.py [line:46] INFO 正则匹配到文件：[小鱼儿yr系统封装优化设置辅助工具V2.08.4（解压密码yrxitong.com）]
+Sat, 22 May 2021 14:10:58 main.py [line:46] INFO 正则匹配到文件：[徐翔]
+Sat, 22 May 2021 14:10:58 main.py [line:46] INFO 正则匹配到文件：[深入理解计算机系统（原书第三版）.pdf]
