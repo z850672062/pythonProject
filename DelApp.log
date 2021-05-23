@@ -1,0 +1,98 @@
+Sun, 23 May 2021 15:23:37 del_file3.py [line:32] INFO 传入参数 :目录 [C:\Users\Administrator.IKUN-20210221YR\Downloads]，正则表达式[[^2021$]+],过期天数 [4]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[85d99e86250544a7ac456464308f65f0.xls]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[a465b485-9f28-4a19-b5f6-216f449711be.docx]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[bd1da8364e4a75d5df2726b80c1da79a.torrent]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[BV1yV41177Xh (1).html]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[Compressed]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[databases-incognito]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[desktop.ini]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[Documents]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[fiddlersetup.exe]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[Music]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[Programs]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[setup_student_4.0.0.1295.exe]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[Tampermonkey_4.10 油猴.crx]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[Telegram Desktop]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[Video]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[台州银行股份有限公司温州分行吴碎微执行实施类执行裁定书.doc]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[微信图片_20210316195019.png]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[微信截图_20210411140527.png]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:40] INFO 正则匹配到文件：[购物党_5.10.65_chrome.zzzmh.cn.crx]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\85d99e86250544a7ac456464308f65f0.xls]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\85d99e86250544a7ac456464308f65f0.xls]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\a465b485-9f28-4a19-b5f6-216f449711be.docx]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\a465b485-9f28-4a19-b5f6-216f449711be.docx]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\bd1da8364e4a75d5df2726b80c1da79a.torrent]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\bd1da8364e4a75d5df2726b80c1da79a.torrent]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\BV1yV41177Xh (1).html]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\BV1yV41177Xh (1).html]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\Compressed]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:73] INFO 删除目录：[C:\Users\Administrator.IKUN-20210221YR\Downloads\Compressed]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\databases-incognito]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:73] INFO 删除目录：[C:\Users\Administrator.IKUN-20210221YR\Downloads\databases-incognito]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\desktop.ini]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\desktop.ini]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\Documents]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:73] INFO 删除目录：[C:\Users\Administrator.IKUN-20210221YR\Downloads\Documents]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\Music]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:73] INFO 删除目录：[C:\Users\Administrator.IKUN-20210221YR\Downloads\Music]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\setup_student_4.0.0.1295.exe]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\setup_student_4.0.0.1295.exe]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\Tampermonkey_4.10 油猴.crx]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\Tampermonkey_4.10 油猴.crx]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\Video]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:73] INFO 删除目录：[C:\Users\Administrator.IKUN-20210221YR\Downloads\Video]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\台州银行股份有限公司温州分行吴碎微执行实施类执行裁定书.doc]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\台州银行股份有限公司温州分行吴碎微执行实施类执行裁定书.doc]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\微信图片_20210316195019.png]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\微信图片_20210316195019.png]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\微信截图_20210411140527.png]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\微信截图_20210411140527.png]成功
+Sun, 23 May 2021 15:23:37 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\购物党_5.10.65_chrome.zzzmh.cn.crx]
+Sun, 23 May 2021 15:23:37 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\购物党_5.10.65_chrome.zzzmh.cn.crx]成功
+Sun, 23 May 2021 15:29:22 del_file3.py [line:32] INFO 传入参数 :目录 [C:\Users\Administrator.IKUN-20210221YR\Downloads]，正则表达式[[^瑞安市$]+],过期天数 [4]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:40] INFO 正则匹配到文件：[2020年瑞安市面向社会公开招聘事业单位工作人员专业资格审查办法ss.xlsx]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:40] INFO 正则匹配到文件：[2020年瑞安市面向社会公开招聘事业单位工作人员岗位一览表ss (1).xls]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:40] INFO 正则匹配到文件：[2020年瑞安市面向社会公开招聘事业单位工作人员岗位一览表ss.xls]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:40] INFO 正则匹配到文件：[2021年浙江省公务员录用考试专业参考目录.xlsx]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:40] INFO 正则匹配到文件：[2021年温州市市级事业单位公开招聘工作人员岗位一览表b.xlsx]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:40] INFO 正则匹配到文件：[2021年温州市瓯海区事业单位公开招聘工作人员计划一览表b (1).xlsx]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:40] INFO 正则匹配到文件：[2021年温州市瓯海区事业单位公开招聘工作人员计划一览表b.xlsx]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:40] INFO 正则匹配到文件：[fiddlersetup.exe]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:40] INFO 正则匹配到文件：[Programs]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:40] INFO 正则匹配到文件：[Telegram Desktop]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:65] INFO 过滤匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\2020年瑞安市面向社会公开招聘事业单位工作人员专业资格审查办法ss.xlsx]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\2020年瑞安市面向社会公开招聘事业单位工作人员专业资格审查办法ss.xlsx]成功
+Sun, 23 May 2021 15:29:22 del_file3.py [line:65] INFO 过滤匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\2020年瑞安市面向社会公开招聘事业单位工作人员岗位一览表ss (1).xls]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\2020年瑞安市面向社会公开招聘事业单位工作人员岗位一览表ss (1).xls]成功
+Sun, 23 May 2021 15:29:22 del_file3.py [line:65] INFO 过滤匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\2020年瑞安市面向社会公开招聘事业单位工作人员岗位一览表ss.xls]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\2020年瑞安市面向社会公开招聘事业单位工作人员岗位一览表ss.xls]成功
+Sun, 23 May 2021 15:29:22 del_file3.py [line:65] INFO 过滤匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\2021年浙江省公务员录用考试专业参考目录.xlsx]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\2021年浙江省公务员录用考试专业参考目录.xlsx]成功
+Sun, 23 May 2021 15:29:22 del_file3.py [line:65] INFO 过滤匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\2021年温州市市级事业单位公开招聘工作人员岗位一览表b.xlsx]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\2021年温州市市级事业单位公开招聘工作人员岗位一览表b.xlsx]成功
+Sun, 23 May 2021 15:29:22 del_file3.py [line:65] INFO 过滤匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\2021年温州市瓯海区事业单位公开招聘工作人员计划一览表b (1).xlsx]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\2021年温州市瓯海区事业单位公开招聘工作人员计划一览表b (1).xlsx]成功
+Sun, 23 May 2021 15:29:22 del_file3.py [line:65] INFO 过滤匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\2021年温州市瓯海区事业单位公开招聘工作人员计划一览表b.xlsx]
+Sun, 23 May 2021 15:29:22 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\2021年温州市瓯海区事业单位公开招聘工作人员计划一览表b.xlsx]成功
+Sun, 23 May 2021 16:01:06 del_file3.py [line:32] INFO 传入参数 :目录 [C:\Users\Administrator.IKUN-20210221YR\Downloads]，正则表达式[^([^瑞]|^[安]|^[市])+$],过期天数 [4]
+Sun, 23 May 2021 16:01:06 del_file3.py [line:40] INFO 正则匹配到文件：[fiddlersetup.exe]
+Sun, 23 May 2021 16:01:06 del_file3.py [line:40] INFO 正则匹配到文件：[Programs]
+Sun, 23 May 2021 16:01:06 del_file3.py [line:40] INFO 正则匹配到文件：[Telegram Desktop]
+Sun, 23 May 2021 16:04:11 del_file3.py [line:32] INFO 传入参数 :目录 [C:\Users\Administrator.IKUN-20210221YR\Downloads]，正则表达式[^([^瑞]|^[安]|^[市])+$],过期天数 [4]
+Sun, 23 May 2021 16:04:11 del_file3.py [line:40] INFO 正则匹配到文件：[data]
+Sun, 23 May 2021 16:04:11 del_file3.py [line:40] INFO 正则匹配到文件：[fiddlersetup.exe]
+Sun, 23 May 2021 16:04:11 del_file3.py [line:40] INFO 正则匹配到文件：[Officebox.exe]
+Sun, 23 May 2021 16:04:11 del_file3.py [line:40] INFO 正则匹配到文件：[Programs]
+Sun, 23 May 2021 16:04:11 del_file3.py [line:40] INFO 正则匹配到文件：[Telegram Desktop]
+Sun, 23 May 2021 16:04:11 del_file3.py [line:40] INFO 正则匹配到文件：[万彩办公大师OfficeBox帮助.pdf]
+Sun, 23 May 2021 16:04:11 del_file3.py [line:40] INFO 正则匹配到文件：[使用指南.txt]
+Sun, 23 May 2021 16:04:11 del_file3.py [line:40] INFO 正则匹配到文件：[许可协议.txt]
+Sun, 23 May 2021 16:04:11 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\Officebox.exe]
+Sun, 23 May 2021 16:04:11 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\Officebox.exe]成功
+Sun, 23 May 2021 16:04:11 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\万彩办公大师OfficeBox帮助.pdf]
+Sun, 23 May 2021 16:04:11 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\万彩办公大师OfficeBox帮助.pdf]成功
+Sun, 23 May 2021 16:04:11 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\使用指南.txt]
+Sun, 23 May 2021 16:04:11 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\使用指南.txt]成功
+Sun, 23 May 2021 16:04:11 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\许可协议.txt]
+Sun, 23 May 2021 16:04:11 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\许可协议.txt]成功
