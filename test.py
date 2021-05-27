@@ -2,7 +2,18 @@
 # encoding: utf-8
 import sys
 import webbrowser
+import time,datetime
 
-if len(sys.argv) > 1:
-    address = ''.join(sys.argv[1:])
-webbrowser.open('https://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D'+address)
+# now = datetime.datetime.now()
+# now2 = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
+# print(now)
+# print(now2)
+while True:
+    while True:
+        try:
+            if 2 > 1:
+                print("大于")
+                break
+        except:
+            print("出现错误！！！")
+
