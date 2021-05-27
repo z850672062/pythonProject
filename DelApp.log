@@ -96,3 +96,361 @@ Sun, 23 May 2021 16:04:11 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\
 Sun, 23 May 2021 16:04:11 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\使用指南.txt]成功
 Sun, 23 May 2021 16:04:11 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\许可协议.txt]
 Sun, 23 May 2021 16:04:11 del_file3.py [line:70] INFO 删除文件：[C:\Users\Administrator.IKUN-20210221YR\Downloads\许可协议.txt]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:32] INFO 传入参数 :目录 [C:\Users\yijun.zeng\Downloads]，正则表达式[^([^瑞]|^[安]|^[市])+$],过期天数 [4]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[---项目外出服务单--2020-04-20 (1).xlsx]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[---项目外出服务单--2020-04-20.xlsx]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[-文件服务器开通申请表-2020-04-01.xlsx]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[-电脑更换申请单-2020-04-01 (1).xlsx]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[-电脑更换申请单-2020-04-01.xlsx]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[-电脑更换申请单-2020-04-20.xlsx]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[-电脑申领单-2020-04-01.xlsx]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[12_A252.cfg]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[20002.冰点文库下载器.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[20200106760501719.pdf]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[2021年WIN10 20H2(2009)系统封装视频教程(一)定制母盘观看和下载地址.txt]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[2021年WIN10 20H2(2009)系统封装视频教程(二)准备系统封装环境观看和下载地址.txt]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[2_TrrIYvbU_airtac_1202_2020_v11sp5_global_version.zip.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[34201_20161201154721.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[360c0mpkill5.1.0.1257-1105.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[360c0mpkill5.1.64.1257-1105 (1).zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[360c0mpkill5.1.64.1257-1105.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[360DrvMgrInstaller_beta.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[360udisk_1.2.0.2011.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[377.83-quadro-grid-desktop-notebook-win8-win7-64bit-international-whql.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[442.74-quadro-desktop-notebook-win10-64bit-international-whql.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[AcroRdrDC1900820071_zh_CN (1).exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[AcroRdrDC1900820071_zh_CN.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[AliIM_taobao_(9.12.10C).exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[AsSSDBenchmark.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[BaiduType_Setup_Light.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[bb1592.rar]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[CBS.log]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[CHN_V3.1.0_media.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[clipper.chrome]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[clipper.chrome.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[CrystalDiskInfo8_9_0a.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[crystaldiskinfo_v8.8.5.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[CZ12MW2.csv]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[DE00000009660549.xml]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[DeskPins-1.32-setup.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[DeskPins130.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Deskpins汉化绿色版.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[desktop.ini]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[dopdf-7.3.398.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[dotnetfx35.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[DPlayer.png]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[DWGFastViewCN-13_x64_13.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[e-axle Layout V1.0-to ZF-From 葛磊-20200401.dwg]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[eSpace UC 故障案例集.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Evernote_6.19.21.1398.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Evernote_6.20.8.1748.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Everything-1.4.1.965.x64-Setup.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Everything-1.4.1.965.x64.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[EzvizStudioSetups.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Finance_32px_529695_easyicon.net.ico]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[FontPack1902120058_XtdAlf_Lang_DC.msi]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Git-2.28.0-64-bit.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[H3C WX5004无线控制器 安装手册-6PW102-整本手册.pdf]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Hard Disk Sentinel Pro_5.50.rar]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[HCIA 2.xmind]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[hztxt.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[iDRAC 7 Enterprise License_9QYZF42.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[IE_128px_1230455_easyicon.net.ico]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[ie_32px_558916_easyicon.net.ico]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Intel-Chipset-Device-Software_5J88W_WIN_10.1.18267.8194_A11_02.EXE]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Intel-Integrated-Sensor-Solution-Driver_152JN_WIN_3.10.100.4122_A00.EXE]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Intel-Serial-IO-Driver_810FP_WIN_30.100.1915.1_A03_02.EXE]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[J9QNMZ1 (1).csv]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[J9QNMZ1.csv]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[LAVFilters-0.74.1-Installer.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[LJPro-M701-Basic-Solution-15299.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[LJPro-M701-Driver-Only-15299.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[npcap-1.00.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[obj_w5zCg8OCw6fCn2vDicOl_809710492_7805_2019112318441_cloudmusicsetup2.7.1.198242.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[officexz.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[PCQQ2020.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[pexels-pixabay-373076.jpg]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[pl132sc.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[PotPlayerSetup64.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[pycharm-community-2020.1.1.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[python-3.8.2.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[python模块.xmind]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[RBF5ZXGLDOOJE6PEFMJS3QXRPQAEQU3CUPSQX2KSDXT6RW46LQ3T7ULZ55KZZ56SKO7EQ3ETTLYZQ4U5NQYTCNA62RUWOCM34WWBUYQ=.png]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[RBF5ZXGLDOOJE6PEFMJS3QXRPQAEQU3CUPSQX2KSDXT6RW46LQ3XCZJWRJNV7ILTXVE4I6VB7OTCG4U5NQYTCNA62RUWOCM34WWBUYQ=.png]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Realtek-High-Definition-Audio-Driver_9K7MM_WIN_6.0.9008.1_A02_01.EXE]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Realtek-High-Definition-Audio-Driver_PV8FG_WIN_6.0.8895.1_A01.EXE]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Red_Hat_Certificate_RHCE-rhel_zengyijun.pdf]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Red_Hat_Certificate_RHCSA-rhel_zengyijun.pdf]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[rufus-3.11.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Sality专杀.rar]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[SetupProd_OffScrub.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[SfabAntiBot_X64.7z]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[SfabAntiBot_X86.7z]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[SoftCo 5500 V200R001 快速安装指南 02.pdf]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Start_128px_1186321_easyicon.net.ico]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[start_favorite_128px_1187948_easyicon.net.ico]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[SumatraPDF-3.1.1-64-install.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[SunloginClient_11.0.0.33826_x64.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[SuperKillerWinPE.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[SuperKillerWinPE64.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Tampermonkey4.8.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[TeamViewer_Setup (1).exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[TeamViewer_Setup (2).exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[TeamViewer_Setup.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[upd-pcl6-x64-6.8.0.24296.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[upd-ps-x64-6.8.0.24296.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[usbcompositedevice_downyi.com (1).zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[usbcompositedevice_downyi.com.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Victoria535.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[vs_community__2019.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[WeChatSetup (1).exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[WeChatSetup (2).exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[WeChatSetup.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[WinPcap_4_1_3.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[Wireshark-win64-3.2.7.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[WXWork_3.0.1.1016.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[XMind-2020-for-Windows-64bit-10.2.1-202007272308.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[XunLeiWebSetup10.1.28.676gw.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[XunLeiWebSetup10.1.32.758gw.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[XunLeiWebSetup10.1.38.890gw.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[交换机 (1).png]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[交换机.png]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[协卡助手 3.4.2.0.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:40] INFO 正则匹配到文件：[清理缓存.png]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\---项目外出服务单--2020-04-20 (1).xlsx]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\---项目外出服务单--2020-04-20 (1).xlsx]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\---项目外出服务单--2020-04-20.xlsx]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\---项目外出服务单--2020-04-20.xlsx]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\-文件服务器开通申请表-2020-04-01.xlsx]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\-文件服务器开通申请表-2020-04-01.xlsx]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\-电脑更换申请单-2020-04-01 (1).xlsx]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\-电脑更换申请单-2020-04-01 (1).xlsx]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\-电脑更换申请单-2020-04-01.xlsx]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\-电脑更换申请单-2020-04-01.xlsx]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\-电脑更换申请单-2020-04-20.xlsx]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\-电脑更换申请单-2020-04-20.xlsx]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\-电脑申领单-2020-04-01.xlsx]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\-电脑申领单-2020-04-01.xlsx]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\12_A252.cfg]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\12_A252.cfg]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\20002.冰点文库下载器.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\20002.冰点文库下载器.exe]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\20200106760501719.pdf]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\20200106760501719.pdf]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\2021年WIN10 20H2(2009)系统封装视频教程(一)定制母盘观看和下载地址.txt]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\2021年WIN10 20H2(2009)系统封装视频教程(一)定制母盘观看和下载地址.txt]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\2021年WIN10 20H2(2009)系统封装视频教程(二)准备系统封装环境观看和下载地址.txt]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\2021年WIN10 20H2(2009)系统封装视频教程(二)准备系统封装环境观看和下载地址.txt]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\2_TrrIYvbU_airtac_1202_2020_v11sp5_global_version.zip.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\2_TrrIYvbU_airtac_1202_2020_v11sp5_global_version.zip.zip]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\34201_20161201154721.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\34201_20161201154721.zip]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\360c0mpkill5.1.0.1257-1105.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\360c0mpkill5.1.0.1257-1105.zip]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\360c0mpkill5.1.64.1257-1105 (1).zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\360c0mpkill5.1.64.1257-1105 (1).zip]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\360c0mpkill5.1.64.1257-1105.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\360c0mpkill5.1.64.1257-1105.zip]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\360DrvMgrInstaller_beta.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\360DrvMgrInstaller_beta.exe]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\360udisk_1.2.0.2011.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\360udisk_1.2.0.2011.exe]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\377.83-quadro-grid-desktop-notebook-win8-win7-64bit-international-whql.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\377.83-quadro-grid-desktop-notebook-win8-win7-64bit-international-whql.exe]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\442.74-quadro-desktop-notebook-win10-64bit-international-whql.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\442.74-quadro-desktop-notebook-win10-64bit-international-whql.exe]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\AcroRdrDC1900820071_zh_CN (1).exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\AcroRdrDC1900820071_zh_CN (1).exe]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\AcroRdrDC1900820071_zh_CN.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\AcroRdrDC1900820071_zh_CN.exe]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\AliIM_taobao_(9.12.10C).exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\AliIM_taobao_(9.12.10C).exe]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\AsSSDBenchmark.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\AsSSDBenchmark.zip]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\BaiduType_Setup_Light.exe]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\BaiduType_Setup_Light.exe]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\bb1592.rar]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\bb1592.rar]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\CBS.log]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\CBS.log]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\CHN_V3.1.0_media.zip]
+Mon, 24 May 2021 08:54:24 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\CHN_V3.1.0_media.zip]成功
+Mon, 24 May 2021 08:54:24 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\clipper.chrome]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:73] INFO 删除目录：[C:\Users\yijun.zeng\Downloads\clipper.chrome]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\clipper.chrome.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\clipper.chrome.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\CrystalDiskInfo8_9_0a.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\CrystalDiskInfo8_9_0a.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\crystaldiskinfo_v8.8.5.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\crystaldiskinfo_v8.8.5.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\CZ12MW2.csv]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\CZ12MW2.csv]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\DE00000009660549.xml]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\DE00000009660549.xml]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\DeskPins-1.32-setup.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\DeskPins-1.32-setup.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\DeskPins130.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\DeskPins130.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Deskpins汉化绿色版.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Deskpins汉化绿色版.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\desktop.ini]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\desktop.ini]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\dopdf-7.3.398.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\dopdf-7.3.398.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\dotnetfx35.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\dotnetfx35.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\DPlayer.png]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\DPlayer.png]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\DWGFastViewCN-13_x64_13.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\DWGFastViewCN-13_x64_13.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\e-axle Layout V1.0-to ZF-From 葛磊-20200401.dwg]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\e-axle Layout V1.0-to ZF-From 葛磊-20200401.dwg]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\eSpace UC 故障案例集.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\eSpace UC 故障案例集.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Evernote_6.19.21.1398.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Evernote_6.19.21.1398.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Evernote_6.20.8.1748.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Evernote_6.20.8.1748.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Everything-1.4.1.965.x64-Setup.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Everything-1.4.1.965.x64-Setup.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Everything-1.4.1.965.x64.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Everything-1.4.1.965.x64.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\EzvizStudioSetups.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\EzvizStudioSetups.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Finance_32px_529695_easyicon.net.ico]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Finance_32px_529695_easyicon.net.ico]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\FontPack1902120058_XtdAlf_Lang_DC.msi]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\FontPack1902120058_XtdAlf_Lang_DC.msi]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\H3C WX5004无线控制器 安装手册-6PW102-整本手册.pdf]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\H3C WX5004无线控制器 安装手册-6PW102-整本手册.pdf]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Hard Disk Sentinel Pro_5.50.rar]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Hard Disk Sentinel Pro_5.50.rar]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\HCIA 2.xmind]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\HCIA 2.xmind]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\hztxt.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\hztxt.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\iDRAC 7 Enterprise License_9QYZF42.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\iDRAC 7 Enterprise License_9QYZF42.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\IE_128px_1230455_easyicon.net.ico]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\IE_128px_1230455_easyicon.net.ico]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\ie_32px_558916_easyicon.net.ico]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\ie_32px_558916_easyicon.net.ico]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Intel-Chipset-Device-Software_5J88W_WIN_10.1.18267.8194_A11_02.EXE]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Intel-Chipset-Device-Software_5J88W_WIN_10.1.18267.8194_A11_02.EXE]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Intel-Integrated-Sensor-Solution-Driver_152JN_WIN_3.10.100.4122_A00.EXE]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Intel-Integrated-Sensor-Solution-Driver_152JN_WIN_3.10.100.4122_A00.EXE]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Intel-Serial-IO-Driver_810FP_WIN_30.100.1915.1_A03_02.EXE]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Intel-Serial-IO-Driver_810FP_WIN_30.100.1915.1_A03_02.EXE]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\J9QNMZ1 (1).csv]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\J9QNMZ1 (1).csv]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\J9QNMZ1.csv]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\J9QNMZ1.csv]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\LAVFilters-0.74.1-Installer.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\LAVFilters-0.74.1-Installer.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\LJPro-M701-Basic-Solution-15299.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\LJPro-M701-Basic-Solution-15299.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\LJPro-M701-Driver-Only-15299.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\LJPro-M701-Driver-Only-15299.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\npcap-1.00.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\npcap-1.00.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\obj_w5zCg8OCw6fCn2vDicOl_809710492_7805_2019112318441_cloudmusicsetup2.7.1.198242.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\obj_w5zCg8OCw6fCn2vDicOl_809710492_7805_2019112318441_cloudmusicsetup2.7.1.198242.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\officexz.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\officexz.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\PCQQ2020.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\PCQQ2020.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\pexels-pixabay-373076.jpg]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\pexels-pixabay-373076.jpg]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\pl132sc.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\pl132sc.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\PotPlayerSetup64.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\PotPlayerSetup64.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\pycharm-community-2020.1.1.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\pycharm-community-2020.1.1.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\python-3.8.2.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\python-3.8.2.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\RBF5ZXGLDOOJE6PEFMJS3QXRPQAEQU3CUPSQX2KSDXT6RW46LQ3T7ULZ55KZZ56SKO7EQ3ETTLYZQ4U5NQYTCNA62RUWOCM34WWBUYQ=.png]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\RBF5ZXGLDOOJE6PEFMJS3QXRPQAEQU3CUPSQX2KSDXT6RW46LQ3T7ULZ55KZZ56SKO7EQ3ETTLYZQ4U5NQYTCNA62RUWOCM34WWBUYQ=.png]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\RBF5ZXGLDOOJE6PEFMJS3QXRPQAEQU3CUPSQX2KSDXT6RW46LQ3XCZJWRJNV7ILTXVE4I6VB7OTCG4U5NQYTCNA62RUWOCM34WWBUYQ=.png]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\RBF5ZXGLDOOJE6PEFMJS3QXRPQAEQU3CUPSQX2KSDXT6RW46LQ3XCZJWRJNV7ILTXVE4I6VB7OTCG4U5NQYTCNA62RUWOCM34WWBUYQ=.png]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Realtek-High-Definition-Audio-Driver_9K7MM_WIN_6.0.9008.1_A02_01.EXE]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Realtek-High-Definition-Audio-Driver_9K7MM_WIN_6.0.9008.1_A02_01.EXE]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Realtek-High-Definition-Audio-Driver_PV8FG_WIN_6.0.8895.1_A01.EXE]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Realtek-High-Definition-Audio-Driver_PV8FG_WIN_6.0.8895.1_A01.EXE]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Red_Hat_Certificate_RHCE-rhel_zengyijun.pdf]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Red_Hat_Certificate_RHCE-rhel_zengyijun.pdf]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Red_Hat_Certificate_RHCSA-rhel_zengyijun.pdf]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Red_Hat_Certificate_RHCSA-rhel_zengyijun.pdf]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\rufus-3.11.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\rufus-3.11.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Sality专杀.rar]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Sality专杀.rar]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\SetupProd_OffScrub.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\SetupProd_OffScrub.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\SfabAntiBot_X64.7z]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\SfabAntiBot_X64.7z]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\SfabAntiBot_X86.7z]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\SfabAntiBot_X86.7z]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\SoftCo 5500 V200R001 快速安装指南 02.pdf]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\SoftCo 5500 V200R001 快速安装指南 02.pdf]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Start_128px_1186321_easyicon.net.ico]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Start_128px_1186321_easyicon.net.ico]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\start_favorite_128px_1187948_easyicon.net.ico]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\start_favorite_128px_1187948_easyicon.net.ico]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\SumatraPDF-3.1.1-64-install.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\SumatraPDF-3.1.1-64-install.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\SunloginClient_11.0.0.33826_x64.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\SunloginClient_11.0.0.33826_x64.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\SuperKillerWinPE.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\SuperKillerWinPE.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\SuperKillerWinPE64.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\SuperKillerWinPE64.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Tampermonkey4.8.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Tampermonkey4.8.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\TeamViewer_Setup (1).exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\TeamViewer_Setup (1).exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\TeamViewer_Setup (2).exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\TeamViewer_Setup (2).exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\TeamViewer_Setup.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\TeamViewer_Setup.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\upd-pcl6-x64-6.8.0.24296.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\upd-pcl6-x64-6.8.0.24296.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\upd-ps-x64-6.8.0.24296.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\upd-ps-x64-6.8.0.24296.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\usbcompositedevice_downyi.com (1).zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\usbcompositedevice_downyi.com (1).zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\usbcompositedevice_downyi.com.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\usbcompositedevice_downyi.com.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Victoria535.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Victoria535.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\WeChatSetup (1).exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\WeChatSetup (1).exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\WeChatSetup (2).exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\WeChatSetup (2).exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\WeChatSetup.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\WeChatSetup.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\WinPcap_4_1_3.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\WinPcap_4_1_3.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\Wireshark-win64-3.2.7.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\Wireshark-win64-3.2.7.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\WXWork_3.0.1.1016.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\WXWork_3.0.1.1016.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\XMind-2020-for-Windows-64bit-10.2.1-202007272308.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\XMind-2020-for-Windows-64bit-10.2.1-202007272308.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\XunLeiWebSetup10.1.28.676gw.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\XunLeiWebSetup10.1.28.676gw.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\XunLeiWebSetup10.1.32.758gw.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\XunLeiWebSetup10.1.32.758gw.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\XunLeiWebSetup10.1.38.890gw.exe]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\XunLeiWebSetup10.1.38.890gw.exe]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\交换机 (1).png]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\交换机 (1).png]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\交换机.png]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\交换机.png]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\协卡助手 3.4.2.0.zip]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\协卡助手 3.4.2.0.zip]成功
+Mon, 24 May 2021 08:54:26 del_file3.py [line:65] INFO 过期匹配到文件：[C:\Users\yijun.zeng\Downloads\清理缓存.png]
+Mon, 24 May 2021 08:54:26 del_file3.py [line:70] INFO 删除文件：[C:\Users\yijun.zeng\Downloads\清理缓存.png]成功
+Mon, 24 May 2021 10:50:23 del_file3.py [line:32] INFO 传入参数 :目录 [C:\Users\yijun.zeng\Downloads]，正则表达式[^([^瑞]|^[安]|^[市])+$],过期天数 [4]
+Mon, 24 May 2021 10:50:23 del_file3.py [line:40] INFO 正则匹配到文件：[Git-2.28.0-64-bit.exe]
+Mon, 24 May 2021 10:50:23 del_file3.py [line:40] INFO 正则匹配到文件：[python模块.xmind]

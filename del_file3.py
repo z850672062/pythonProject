@@ -59,8 +59,8 @@ def find_file(file_dir, file_re='[^XXX$]+', expire_time=3):
         # 把目录和文件名合成一个路径
         abs_file = os.path.join(file_dir, date_file)
         # 获取文件的访问时间 以时间戳的形式
-        file_timestamp = os.path.getmtime(abs_file)
-        # 如果文件夹的修改时间时间戳 小于等于 n天前的时间戳 就并删除
+        file_timestamp = os.path.getatime(abs_file)
+        # 如果文件夹的访问时间 时间戳 小于等于 n天前的时间戳 就并删除
         if float(file_timestamp) <= float(n_days_agos_timestamps):
             logging.info('过期匹配到文件：[%s]' % abs_file)
             # print "匹配到文件:" ,abs_file
@@ -90,3 +90,4 @@ def read_conf(file_path):
 if __name__ == "__main__":
     # print(sys.argv[1])
     read_conf(sys.argv[1])
+input();
