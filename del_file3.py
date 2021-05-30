@@ -90,4 +90,3 @@ def read_conf(file_path):
 if __name__ == "__main__":
     # print(sys.argv[1])
     read_conf(sys.argv[1])
-input();
