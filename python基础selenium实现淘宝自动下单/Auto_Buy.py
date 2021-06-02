@@ -1,8 +1,8 @@
 #!/usr/bin/env python 
 # encoding: utf-8
 
-#思路，自动打开网页https://www.icloud.com/iclouddrive/ 点击 思维导图/IT/开发/ 之后点击上传按钮，选择文件进行上传
-#需要的工具 python pycharm chromedriver.exe selenium
+#需要的工具 python pycharm chromedriver.exe（91.0.4472.77） selenium
+
 
 #下例是自定义时间和商品自动抢购。
 from selenium import webdriver
