@@ -47,16 +47,6 @@ def printPhysicalMemory():
         mem_dict['速度'] = mem.Speed
         mem_dict['厂商'] = mem.Manufacturer
         mem_dict['零件号'] = mem.PartNumber
-        # MFRS = mem.Manufacturer
-        # speed = mem.Speed
-        # CY = mem.Capacity
-        # PN = mem.PartNumber
-        # DL = mem.DeviceLocator
-        # print('设备位置: %s' %DL)
-        # print('容量: %sMB' % (int(int(CY)/1024/1024)))
-        # print('速度: %sMHz' % speed)
-        # print('厂商: %s' % MFRS )
-        # print('零件号: %s' % PN)
         memorys.append(mem_dict)
     # for m in memorys:
     #     print(m)
@@ -110,6 +100,17 @@ def printOS():
     # print(BIOS)
     return OS
 
+#excel生成
+def excel_new(first_line,excel_name):
+
+    # 获取工作簿
+    wb = Workbook()
+    # 激活当前的sheet
+    ws = wb.active
+    ws.append(first_line)
+    ws1 = wb.create_sheet('SoftwareList')
+    wb.save(excel_name)
+
 
 #ecel表格处理
 def excel_handle(Infolist,SoftList,path_0,excel_name):
@@ -139,56 +140,56 @@ def excel_handle(Infolist,SoftList,path_0,excel_name):
         wb.save(filename= path_0 + '\\' + excel_name)
     except Exception as e:
         print("Exception", e)
-        input('Please press enter key to exit ...')
+        input('写入excel表格报错了！！！')
 
+
+#列出软件列表
 def SoftwareList():
-    # 格式化pathlib返回的当前路径
-    path_0 = str(pathlib.Path.cwd())
+    try:
 
-    # 使用主机名命名软件安装列表
-    hostname = socket.gethostname()
+        # 格式化pathlib返回的当前路径
+        path_0 = str(pathlib.Path.cwd())
 
-    # file = open(path_0 + '\\' + '%s' % hostname + '.txt', 'w+')
+        # 使用主机名命名软件安装列表
+        hostname = socket.gethostname()
 
-    # 需要遍历的两个注册表
-    sub_key = [r'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall',
-               r'SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall']
+        # file = open(path_0 + '\\' + '%s' % hostname + '.txt', 'w+')
 
-    software_name = []
+        # 需要遍历的两个注册表
+        sub_key = [r'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall',
+                   r'SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall']
 
-    for i in sub_key:
-        key = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, i, 0, winreg.KEY_ALL_ACCESS)
-        for j in range(0, winreg.QueryInfoKey(key)[0] - 1):
-            try:
-                key_name = winreg.EnumKey(key, j)
-                key_path = i + '\\' + key_name
-                each_key = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, key_path, 0, winreg.KEY_ALL_ACCESS)
-                DisplayName, REG_SZ = winreg.QueryValueEx(each_key, 'DisplayName')
-                DisplayName = DisplayName.encode('utf-8')
-                software_name.append(DisplayName)
-            except WindowsError:
-                pass
+        software_name = []
 
-    # 去重排序
-    software_name = list(set(software_name))
-    software_name = sorted(software_name)
-    SoftList = []
-    for result in software_name:
-        # print(result.decode("utf-8"))
-        # file.write(str(result.decode("utf-8")) + '\n')
-        SoftList.append(str(result.decode("utf-8")))
-    # file.close()
-    return SoftList
+        for i in sub_key:
+            key = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, i, 0, winreg.KEY_ALL_ACCESS)
+            for j in range(0, winreg.QueryInfoKey(key)[0] - 1):
+                try:
+                    key_name = winreg.EnumKey(key, j)
+                    key_path = i + '\\' + key_name
+                    each_key = winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE, key_path, 0, winreg.KEY_ALL_ACCESS)
+                    DisplayName, REG_SZ = winreg.QueryValueEx(each_key, 'DisplayName')
+                    DisplayName = DisplayName.encode('utf-8')
+                    software_name.append(DisplayName)
+                except WindowsError:
+                    pass
 
-if __name__ == '__main__':
-    c = wmi.WMI()
-    #格式化pathlib返回的当前路径
-    path_0 = str(pathlib.Path.cwd())
-    #excel名称 可以写入配置
-    excel_name = '电脑信息记录.xlsx'
+        # 去重排序
+        software_name = list(set(software_name))
+        software_name = sorted(software_name)
+        SoftList = []
+        for result in software_name:
+            # print(result.decode("utf-8"))
+            # file.write(str(result.decode("utf-8")) + '\n')
+            SoftList.append(str(result.decode("utf-8")))
+        # file.close()
+        return SoftList
+    except Exception as e:
+        print("Exception", e)
+        input('获取软件列表报错了！！')
 
-    print("注意脚本运行路径下要存在（电脑信息记录.xlsm）文档，不存在将会自动生成")
 
+def Info_list():
     #使用人
     use_name = input("请输入用户姓名,以回车键结束。")
     # print(use_name)
@@ -224,41 +225,47 @@ if __name__ == '__main__':
     # print(printMacAddress())
     #导入时间
     Import_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-    #软件列表
-    SoftList =  SoftwareList()
-    #将hostname插入第0个索引
-    SoftList.insert(0,hostname)
-    SoftList.insert(1,'')
 
-
-
-    #创建的行 这个可以写入配置文件
-    first_line = ['使用人','计算机名','SN','操作系统','CPU','内存','硬盘','显卡','网卡','有线MAC','无线MAC','导入时间']
-    #创建的数据行
     Infolist = [use_name,hostname,SN,OS,CPU,Mem,Hdisk,Display_Card,MacAddress,'#','#',Import_time]
-    while True:
-        # 判断目录下是否存在该表格
-        Excel_judge = os.path.isfile(path_0 + '\\' + excel_name)
-        # 如果存在就运行excel_handle表格处理函数
-        if Excel_judge == True:
-            print('ture')
-            excel_handle(Infolist,SoftList, path_0, excel_name)
-            break;
-        else:
-            print('false')
-            # 获取工作簿
-            wb = Workbook()
-            # 激活当前的sheet
-            ws = wb.active
-            ws.append(first_line)
-            ws1 = wb.create_sheet('SoftwareList')
-            wb.save(excel_name)
-            continue;
-            # break;
+    return Infolist
 
 
 
 
-    # #调用cominfo返回的 参数列表
-    # list_all_def =
-    # excel_handle(list_all_def,path_0,excel_name)
+if __name__ == '__main__':
+    try:
+        c = wmi.WMI()
+        # 格式化pathlib返回的当前路径
+        path_0 = str(pathlib.Path.cwd())
+        print("运行该脚本将会在脚本目录下自动生成（电脑信息记录.xlsx）文件")
+        print("如果已存在将会在里面继续写入信息")
+        # 软件列表
+        SoftList = SoftwareList()
+        # 将hostname插入第0个索引 用于给sheet2添加 主机名
+        SoftList.insert(0, printHostname())
+        SoftList.insert(1, '')
+        # #运行infolist来进行传参
+        # Info_list()
+        # excel名称 可以写入配置
+        excel_name = '电脑信息记录.xlsx'
+        # 创建的行 这个可以写入配置文件
+        first_line = ['使用人', '计算机名', 'SN', '操作系统', 'CPU', '内存', '硬盘', '显卡', '网卡', '有线MAC', '无线MAC', '导入时间']
+        while True:
+            # 判断目录下是否存在该表格
+            Excel_judge = os.path.isfile(path_0 + '\\' + excel_name)
+            # 如果存在就运行excel_handle表格处理函数
+            if Excel_judge == True:
+                print('写入数据中...')
+
+                excel_handle(Info_list(), SoftList, path_0, excel_name)
+                break;
+            else:
+                print('文件不存在,生成中...')
+                excel_new(first_line, excel_name)
+                print('生成完毕！')
+
+                continue;
+    except Exception as e:
+        print("Exception", e)
+        input('运行主函数报错了！！！！')
+
