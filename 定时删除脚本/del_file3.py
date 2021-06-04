@@ -7,7 +7,8 @@ import time
 import datetime
 import logging
 import shutil
-
+import pathlib
+from configobj import ConfigObj
 
 # 记录日志
 logging.basicConfig(level=logging.DEBUG,
@@ -24,7 +25,7 @@ logging.basicConfig(level=logging.DEBUG,
 
 
 # file_dir 为文件名称，file_re为过滤名称包含XXX的文件或文件夹，expire_time为最大保留时间
-def find_file(file_dir, file_re='[^XXX$]+', expire_time=3):
+def find_file(file_dir, file_re, expire_time):
     if file_re == '':
         logging.error('file_re is null,exit')
         return None
@@ -86,7 +87,70 @@ def read_conf(file_path):
             expire_time = line_list[2]
             find_file(file_dir, file_re, expire_time)
 
+#初始化配置文件写入
+def config_handle(config_path):
+    config = ConfigObj(config_path, encoding='UTF8')
+    config['del'] = {}
+    config['del']['file_dir'] = 'C:\\Users\\yijun.zeng\\Downloads'
+    config['del']['file_re'] = '^([^瑞]|^[安]|^[市])+$'
+    config['del']['expire_time'] = '3'
+    config.write()
+
+#配置文件读取
+def config_read(config_path):
+    config = ConfigObj(config_path,encoding='UTF-8')
+    temp_dict = {}
+    temp_dict['file_dir'] = config['del']['file_dir']
+    temp_dict['file_re'] = config['del']['file_re']
+    temp_dict['expire_time'] = config['del']['expire_time']
+    return temp_dict
+#删除文件
+def del_file(config_dict):
+    file_dir = config_dict['file_dir']
+    file_re = config_dict['file_re']
+    expire_time = config_dict['expire_time']
+    #调用find_file删除
+    find_file(file_dir,file_re,expire_time)
+
+
+
+
+
 
 if __name__ == "__main__":
-    # print(sys.argv[1])
-    read_conf(sys.argv[1])
+    # read_conf(sys.argv[1])
+    # 实例化一个ConfigObj对象
+    config = ConfigObj()
+    #当前路径
+    path_0 = pathlib.Path.cwd()
+    #配置名称
+    config_name = 'del_conf.ini'
+    #配置路径
+    config_path = str(path_0) + '\\' + config_name
+    # 生成配置文件/修改网卡信息
+    while True:
+        # 判断目录下是否存在该表格
+        config_judge = os.path.isfile(str(config_path))
+        if config_judge == True:
+            print('删除中...请不要关闭进程')
+            # 实例化配置读取方法 返回 等配置数据
+            config_dict = config_read(config_path)
+            #
+            del_file(config_dict)
+            input('删除完毕，按回车结束')
+
+
+
+
+
+
+            break;
+        else:
+            print('文件不存在,生成中...')
+            config.filename = str(config_path)
+            config_handle(config_path)
+            print('生成完毕！')
+            print('请打开%s文件修改你的数据保存之后再次打开该程序。' % config_name)
+            input()
+            break;
+

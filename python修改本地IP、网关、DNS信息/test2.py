@@ -1,6 +1,12 @@
 #!/usr/bin/env python 
 # encoding: utf-8
-zimu = ['a','b','c','d','e','f','g','h','i','j']
+NIC = ['Intel(R) 82579LM Gigabit Network Connection',
+'DW1501 Wireless-N WLAN Half-Mini 卡',
+'VirtualBox Host-Only Ethernet Adapter',
+'Microsoft Loopback Adapter']
 
-for zimu in range(10):
-    print(zimu)
+
+for index in range(len(NIC)) :
+    NIC[index] = str(index) + ' —— ' + NIC[index]
+for i in NIC:
+    print(i)
