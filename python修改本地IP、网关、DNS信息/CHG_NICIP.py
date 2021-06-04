@@ -16,19 +16,19 @@ class UpdateIp(object):
         # 获取到本地所有有网卡信息,list
         #IPEnabled=True为获取 IP不为空的网卡信息
         self.configs = self.wmiservice.Win32_NetworkAdapterConfiguration(IPEnabled=True)
-    #用ip判断网卡是否存在 返回第一张网卡
-    def get_inter(self):
-        flag = 0
-        # 遍历所有网卡，找到要修改的那个
-        for con in self.configs:
-            #con.IPAddress[0]为调用Win32_NetworkAdapterConfiguration方法里的IPAddress的值
-            ip = re.findall("\d+.\d+.\d+.\d+", con.IPAddress[0])
-
-            if len(ip) > 0:
-                #结束循环返回第一张网卡
-                return 1
-            else:
-                flag = flag+1
+    # #返回带有IP的网卡
+    # def get_inter(self):
+    #     flag = 0
+    #     # 遍历所有网卡，找到要修改的那个
+    #     for con in self.configs:
+    #         #con.IPAddress[0]为调用Win32_NetworkAdapterConfiguration方法里的IPAddress的值
+    #         ip = re.findall("\d+.\d+.\d+.\d+", con.IPAddress[0])
+    #
+    #         if len(ip) > 0:
+    #             #结束循环返回第一张网卡
+    #             return 1
+    #         else:
+    #             flag = flag+1
     #
     def runset(self, ip, subnetmask, interway, dns):
         #调用第一张网卡信息
@@ -90,29 +90,65 @@ def CHG_NIC(config_dict):
     update.runset([config_dict['IP']], [config_dict['SubnetMask']],
                   [config_dict['Gateway']], [config_dict['DNS']])
 
+def nic_namelist():
+    c = WMI()
+    temp_nicname = []
+    for nic in c.Win32_NetworkAdapterConfiguration(IPEnabled=True):
+        temp_nicname.append(nic.Description)
+    return temp_nicname
+
 if __name__ == '__main__':
     # 实例化一个ConfigObj对象
     config = ConfigObj()
+    #当前路径
     path_0 = pathlib.Path.cwd()
+    #配置名称
     config_name = 'NICIP_info.ini'
+    #配置路径
     config_path = str(path_0) + '\\' + config_name
-    while True:
-        # 判断目录下是否存在该表格
-        config_judge = os.path.isfile(str(config_path))
-        if config_judge == True:
-            print('修改数据中...')
-            # 实例化配置读取方法
-            config_dict = config_read()
-            #调用chg_nic改变网卡ip等信息
-            CHG_NIC(config_dict)
-            break;
-        else:
-            print('文件不存在,生成中...')
-            config.filename = str(config_path)
-            config_handle()
-            print('生成完毕！')
-            print('请打开NICIP_info.ini文件修改你的数据')
-            break;
+    print('按0自动获取IP地址DNS地址')
+    print('按1运行配置文件修改IP地址、网关等信息')
+    temp_num = str(input('请输入"0"或"1"：'))
+    if temp_num == '1':
+        # 生成配置文件/修改网卡信息
+        while True:
+            # 判断目录下是否存在该表格
+            config_judge = os.path.isfile(str(config_path))
+            if config_judge == True:
+                print('修改数据中...')
+                # 实例化配置读取方法
+                config_dict = config_read()
+                # 调用chg_nic改变网卡ip等信息
+                CHG_NIC(config_dict)
+                break;
+            else:
+                print('文件不存在,生成中...')
+                config.filename = str(config_path)
+                config_handle()
+                print('生成完毕！')
+                print('请打开NICIP_info.ini文件修改你的数据保存之后再次打开该程序。')
+                break;
+    else:
+        print('自动获取ip')
+    #实例化nic_namelist
+    nic_name = nic_namelist()
+    #获取nic_name的长度
+    nic_namelen = len(nic_name)
+    print('总共有%s张网卡' % nic_namelen)
+    #循环显示nic_name 列表
+    for i in nic_name:
+        print(i)
+
+    nic_num = input('请输入你想修改的网卡前面的数字：')
+    my_ip = UpdateIp
+    if nic_num == nic_num:
+        my_ip.runset(nic_num)
+
+
+
+
+
+
 
 
 

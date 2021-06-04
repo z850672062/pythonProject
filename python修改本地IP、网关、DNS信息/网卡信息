@@ -1,0 +1,139 @@
+instance of Win32_NetworkAdapterConfiguration
+{
+	Caption = "[00000012] Intel(R) 82579LM Gigabit Network Connection";
+	DatabasePath = "%SystemRoot%\\System32\\drivers\\etc";
+	DefaultIPGateway = {"192.168.16.1"};
+	Description = "Intel(R) 82579LM Gigabit Network Connection";
+	DHCPEnabled = TRUE;
+	DHCPLeaseExpires = "20210604170953.000000+480";
+	DHCPLeaseObtained = "20210604150953.000000+480";
+	DHCPServer = "192.168.16.15";
+	DNSDomainSuffixSearchOrder = {"KELAIJIDIAN.COM"};
+	DNSEnabledForWINSResolution = FALSE;
+	DNSHostName = "BF1KFS1";
+	DNSServerSearchOrder = {"192.168.16.35", "192.168.17.35"};
+	DomainDNSRegistrationEnabled = FALSE;
+	FullDNSRegistrationEnabled = TRUE;
+	GatewayCostMetric = {0};
+	Index = 12;
+	InterfaceIndex = 13;
+	IPAddress = {"192.168.17.44", "fe80::1ec:65e1:7060:c2e"};
+	IPConnectionMetric = 10;
+	IPEnabled = TRUE;
+	IPFilterSecurityEnabled = FALSE;
+	IPSecPermitIPProtocols = {};
+	IPSecPermitTCPPorts = {};
+	IPSecPermitUDPPorts = {};
+	IPSubnet = {"255.255.248.0", "64"};
+	MACAddress = "D4:BE:D9:10:8E:B1";
+	ServiceName = "e1cexpress";
+	SettingID = "{ED8E8D1E-1EB0-4184-B356-B13EC87B7ACF}";
+	TcpipNetbiosOptions = 0;
+	WINSEnableLMHostsLookup = TRUE;
+	WINSScopeID = "";
+};
+
+['192.168.17.44']
+<class 'int'>
+
+instance of Win32_NetworkAdapterConfiguration
+{
+	Caption = "[00000014] DW1501 Wireless-N WLAN Half-Mini 卡";
+	DatabasePath = "%SystemRoot%\\System32\\drivers\\etc";
+	DefaultIPGateway = {"192.168.16.1"};
+	Description = "DW1501 Wireless-N WLAN Half-Mini 卡";
+	DHCPEnabled = TRUE;
+	DHCPLeaseExpires = "20210604170956.000000+480";
+	DHCPLeaseObtained = "20210604150956.000000+480";
+	DHCPServer = "192.168.16.15";
+	DNSDomainSuffixSearchOrder = {"KELAIJIDIAN.COM"};
+	DNSEnabledForWINSResolution = FALSE;
+	DNSHostName = "BF1KFS1";
+	DNSServerSearchOrder = {"192.168.16.35", "192.168.17.35"};
+	DomainDNSRegistrationEnabled = FALSE;
+	FullDNSRegistrationEnabled = TRUE;
+	GatewayCostMetric = {0};
+	Index = 14;
+	InterfaceIndex = 15;
+	IPAddress = {"192.168.17.46", "fe80::48ba:7a68:1326:8f62"};
+	IPConnectionMetric = 25;
+	IPEnabled = TRUE;
+	IPFilterSecurityEnabled = FALSE;
+	IPSecPermitIPProtocols = {};
+	IPSecPermitTCPPorts = {};
+	IPSecPermitUDPPorts = {};
+	IPSubnet = {"255.255.248.0", "64"};
+	MACAddress = "64:27:37:02:5A:94";
+	ServiceName = "BCM43XX";
+	SettingID = "{3B4D9C0D-4F1D-4BF8-9700-7D85F7D9333B}";
+	TcpipNetbiosOptions = 0;
+	WINSEnableLMHostsLookup = TRUE;
+	WINSScopeID = "";
+};
+
+['192.168.17.46']
+<class 'int'>
+
+instance of Win32_NetworkAdapterConfiguration
+{
+	Caption = "[00000017] VirtualBox Host-Only Ethernet Adapter";
+	DatabasePath = "%SystemRoot%\\System32\\drivers\\etc";
+	Description = "VirtualBox Host-Only Ethernet Adapter";
+	DHCPEnabled = FALSE;
+	DNSDomainSuffixSearchOrder = {"KELAIJIDIAN.COM"};
+	DNSEnabledForWINSResolution = FALSE;
+	DNSHostName = "BF1KFS1";
+	DomainDNSRegistrationEnabled = FALSE;
+	FullDNSRegistrationEnabled = TRUE;
+	Index = 17;
+	InterfaceIndex = 19;
+	IPAddress = {"192.168.56.1", "fe80::ed90:32a8:6c46:2945"};
+	IPConnectionMetric = 10;
+	IPEnabled = TRUE;
+	IPFilterSecurityEnabled = FALSE;
+	IPSecPermitIPProtocols = {};
+	IPSecPermitTCPPorts = {};
+	IPSecPermitUDPPorts = {};
+	IPSubnet = {"255.255.255.0", "64"};
+	MACAddress = "0A:00:27:00:00:13";
+	ServiceName = "VBoxNetAdp";
+	SettingID = "{63FBFCA4-88DA-4651-BD55-A22D799D6997}";
+	TcpipNetbiosOptions = 0;
+	WINSEnableLMHostsLookup = TRUE;
+	WINSScopeID = "";
+};
+
+['192.168.56.1']
+<class 'int'>
+
+instance of Win32_NetworkAdapterConfiguration
+{
+	Caption = "[00000018] Microsoft Loopback Adapter";
+	DatabasePath = "%SystemRoot%\\System32\\drivers\\etc";
+	Description = "Microsoft Loopback Adapter";
+	DHCPEnabled = TRUE;
+	DHCPServer = "255.255.255.255";
+	DNSDomainSuffixSearchOrder = {"KELAIJIDIAN.COM"};
+	DNSEnabledForWINSResolution = FALSE;
+	DNSHostName = "BF1KFS1";
+	DomainDNSRegistrationEnabled = FALSE;
+	FullDNSRegistrationEnabled = TRUE;
+	Index = 18;
+	InterfaceIndex = 44;
+	IPAddress = {"169.254.153.235", "fe80::64f4:ba7c:8b2d:99eb"};
+	IPConnectionMetric = 30;
+	IPEnabled = TRUE;
+	IPFilterSecurityEnabled = FALSE;
+	IPSecPermitIPProtocols = {};
+	IPSecPermitTCPPorts = {};
+	IPSecPermitUDPPorts = {};
+	IPSubnet = {"255.255.0.0", "64"};
+	MACAddress = "02:00:4C:4F:4F:50";
+	ServiceName = "msloop";
+	SettingID = "{41048FE6-62C1-485D-A8B7-B2691D4E6C9E}";
+	TcpipNetbiosOptions = 0;
+	WINSEnableLMHostsLookup = TRUE;
+	WINSScopeID = "";
+};
+
+['169.254.153.235']

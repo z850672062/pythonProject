@@ -128,7 +128,7 @@ def excel_handle(Infolist,SoftList,path_0,excel_name):
         ws2 = wb[sheets[1]]
         #插入一列
         ws2.insert_cols(idx=1,amount=2)
-        #在第2行第一列 添加value为 SoftList[i] 的参数
+        #在第1行第一列 添加value为 SoftList[i] 的参数
         for i in range(len(SoftList)):
             ws2.cell(i + 1, 1).value = SoftList[i]
 
