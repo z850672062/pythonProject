@@ -1,0 +1,67 @@
+instance of Win32_NetworkAdapterConfiguration
+{
+	Caption = "[00000002] Intel(R) Wireless-AC 9560";
+	DatabasePath = "%SystemRoot%\\System32\\drivers\\etc";
+	DefaultIPGateway = {"192.168.2.1"};
+	Description = "Intel(R) Wireless-AC 9560";
+	DHCPEnabled = TRUE;
+	DHCPLeaseExpires = "20210604174719.000000+480";
+	DHCPLeaseObtained = "20210603174719.000000+480";
+	DHCPServer = "192.168.2.1";
+	DNSDomainSuffixSearchOrder = {};
+	DNSEnabledForWINSResolution = FALSE;
+	DNSHostName = "IKUN-20210221YR";
+	DNSServerSearchOrder = {"192.168.2.1"};
+	DomainDNSRegistrationEnabled = FALSE;
+	FullDNSRegistrationEnabled = TRUE;
+	GatewayCostMetric = {0};
+	Index = 2;
+	InterfaceIndex = 5;
+	IPAddress = {"192.168.2.103", "fe80::29c1:83cf:bebc:22c0"};
+	IPConnectionMetric = 35;
+	IPEnabled = TRUE;
+	IPFilterSecurityEnabled = FALSE;
+	IPSecPermitIPProtocols = {};
+	IPSecPermitTCPPorts = {};
+	IPSecPermitUDPPorts = {};
+	IPSubnet = {"255.255.255.0", "64"};
+	MACAddress = "34:13:E8:99:B7:B8";
+	ServiceName = "Netwtw06";
+	SettingID = "{116A252F-1A89-4CCF-8B77-4B5BDBB4D0DC}";
+	TcpipNetbiosOptions = 0;
+	WINSEnableLMHostsLookup = TRUE;
+	WINSScopeID = "";
+};
+
+
+instance of Win32_NetworkAdapterConfiguration
+{
+	Caption = "[00000015] Microsoft KM-TEST 环回适配器";
+	DatabasePath = "%SystemRoot%\\System32\\drivers\\etc";
+	Description = "Microsoft KM-TEST 环回适配器";
+	DHCPEnabled = FALSE;
+	DNSDomainSuffixSearchOrder = {};
+	DNSEnabledForWINSResolution = FALSE;
+	DNSHostName = "IKUN-20210221YR";
+	DomainDNSRegistrationEnabled = FALSE;
+	FullDNSRegistrationEnabled = TRUE;
+	Index = 15;
+	InterfaceIndex = 52;
+	IPAddress = {"192.168.10.1", "fe80::a59b:bdf3:b234:57f3"};
+	IPConnectionMetric = 25;
+	IPEnabled = TRUE;
+	IPFilterSecurityEnabled = FALSE;
+	IPSecPermitIPProtocols = {};
+	IPSecPermitTCPPorts = {};
+	IPSecPermitUDPPorts = {};
+	IPSubnet = {"255.255.255.0", "64"};
+	MACAddress = "02:00:4C:4F:4F:50";
+	ServiceName = "kmloop";
+	SettingID = "{32154E9F-662D-4E61-A7D5-24E7D7D133C1}";
+	TcpipNetbiosOptions = 0;
+	WINSEnableLMHostsLookup = TRUE;
+	WINSScopeID = "";
+};
+
+
+进程已结束，退出代码为 0
