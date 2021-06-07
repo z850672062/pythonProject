@@ -48,7 +48,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     #添加中间件LocaleMiddleware
-    'django.middlerware.locale.LocaleMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -130,6 +130,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+#添加静态目录 存放css js文件
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'pstatic'),
+)
+#添加静态root 作用是在服务器上部署项目，实现服务器和项目之间的映射
+STATIC_ROOT = os.path.join(BASE_DIR, 'AllStatic')
+
+#添加媒体资源库 存放用户头像 商品图片等
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

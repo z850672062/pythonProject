@@ -14,8 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path ,re_path,include
+from django.views.static import serve
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #添加项目应用index,commodity和shopper的urls.py
+    path('',include(('index.urls','index'),namespace='index')),
+    path('commodity',include(('commodity.urls','commodity'),namespace='commodity')),
+    path('shopper',include(('shopper.urls','shopper'),namespace='shopper')),
+
+    #配置媒体资源的路由信息 这样就可以在开发阶段直接使用静态文件了。
+    re_path('media/(?P<path>.*)', serve,
+            {'document_root':settings.MEDIA_ROOT}, name='media'),
 ]
