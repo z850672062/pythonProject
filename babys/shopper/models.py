@@ -11,7 +11,7 @@ STATE = (
 
 )
 #购物车信息表
-class CartInfos(models.Mode):
+class CartInfos(models.Model):
     id = models.AutoField(primary_key = True)
     quantity = models.IntegerField('购买数量')
     commodityInfos_id = models.IntegerField('商品ID')
@@ -25,7 +25,7 @@ class CartInfos(models.Mode):
         verbose_name_plural = '购物车'
 
 #订单信息表
-class OrderInfos(models.Mode):
+class OrderInfos(models.Model):
     id = models.AutoField(primary_key = True)
     price = models.FloatField('订单总价')
     created = models.DateField('创建时间', auto_now_add=True)

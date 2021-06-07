@@ -5,7 +5,7 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-    #主页
-    path('', indexView, name='index'),
+    # #主页
+    # path('', indexView, name='index'),
 
 ]
