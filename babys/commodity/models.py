@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+#类别表
 class Types(models.Model):
     id = models.AutoField(primary_key=True)
     firsts = models.CharField('一级类型', max_length=100)
@@ -14,6 +15,7 @@ class Types(models.Model):
         verbose_name = '商品类型'
         verbose_name_plural = '商品类型'
 
+#商品信息表
 class CommodityInfos(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField('商品名称', max_length=100)
