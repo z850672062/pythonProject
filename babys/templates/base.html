@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--            一    -->
+    <!--#加载静态文件-->
+    {% load static %}
+    <!--title标签定义文档标题-->
+    <title>{{ title }}</title>
+    <!--链接一个外部样式表,来自css/main.css-->
+    <link rel="stylesheet" href="{ % static 'layui/css/layui.css' %}">
+    <link rel="stylesheet" href="{ % static 'css/main.css' %}">
+    <!--script脚本标签 可以插入JavaScript-->
+    <script src="{% static 'layui/layui.js %}"></script>
+</head>
+<body>
+<div class="header">
+    <div class="headerLayout w1200">
+        <div class="headerCon">
+<!--            二    -->
+            <h1 class="mallLogo">
+<!--                a标签定义超链接-->
+                <a href="{% url 'index:index' %}">
+                    <img src="{% static 'img/logo.png' %}">
+                </a>
+            </h1>
+<!--            三    -->
+            <div class="mallSearch">
+<!--                <form> 标签用于为用户输入创建 HTML 表单。表单用于向服务器传输数据 method 规定用于发送 form-data 的 HTTP 方法。novalidate如果使用该属性，则提交表单时不进行验证。-->
+                <form action="{% url 'commodity:commodity' %}" method="get" class="layui-form" novalidate>
+<!--                    required指示输入字段的值是必需的。placeholder规定帮助用户填写输入字段的提示。autocomplete规定是否使用输入字段的自动完成功能。 -->
+                    <input type="text" name="n" required lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入需要的商品">
+                    <button class="layui-btn" lay-submit lay-filter="forDemo">
+<!--                        <i> 标签显示斜体文本效果。-->
+                        <i class="layui-icon" layui-icon-search></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content content-nav-base {{ classContent }}">
+    <div class="main-nac">
+        <div class="inner-cont0">
+            <div class="inner-cont1 w1200">
+<!--                四    -->
+                <div class="inner-cont2">
+<!--                    {% url 'index:index' %} 第一个index为babys中urls.py的namespace，第二个index为index应用urls.py的路由命名name -->
+                    <a href="{% url 'index:index' %}"
+                       {% if classContent == '' %} class="active" {% endif %}>首页</a>
+                    <a href="{% url 'commodity:commodity' %}"
+                       {% if classContent == 'commoditys' %} class="active" {% endif %}>所有商品</a>
+                    <a href="{% url 'shopper:shopcart' %}"
+                       {% if classContent == 'shopcarts' %} class="active" {% endif %}>购物车</a>
+                    <a href="{% url 'shopper:shopper' %}"
+                       {% if classContent == 'infomations' %} class="active" {% endif %}>首页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--                 五 block是django的内置模板语法，用来设置文件调用入口，其他html文件只需编写该语法就能调用    -->
+    {% block content %}{% endblock content %}
+</div>
+    {% block footer %}{% endblock footer %}
+<script type="text/javascript">
+    {% block script %}{% endblock script %}
+</script>
+</body>
+</html>
