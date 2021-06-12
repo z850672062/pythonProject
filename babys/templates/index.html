@@ -87,7 +87,7 @@ load static读取静态资源，静态资源的加载过程由配置文件settin
             <a href="{% url 'commodity:detail' c.id %}">
               <img src="{{ c.img.url }}" alt="">
             </a>
-        {% end for %}
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -108,7 +108,7 @@ load static读取静态资源，静态资源的加载过程由配置文件settin
             <a href="{% url 'commodity:detail' f.id %}">
               <img src="{{ f.img.url }}" alt="">
             </a>
-        {% end for %}
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -129,7 +129,7 @@ load static读取静态资源，静态资源的加载过程由配置文件settin
             <a href="{% url 'commodity:detail' g.id %}">
               <img src="{{ g.img.url }}" alt="">
             </a>
-        {% end for %}
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -163,20 +163,20 @@ load static读取静态资源，静态资源的加载过程由配置文件settin
 </div>
 {% endblock footer %}
 
-<!--编写首页今日必抢 页面轮播功能-->
 {% block script %}
 layui.config({
     base: '{% static 'js/' %}'
-}).use(['mm','carouse1'],function(){
-    var carouse1 = layui.carouse1,
-    mm = layui.mm;
-    var option = {
+  }).use(['mm','carousel'],function(){
+      var carousel = layui.carousel,
+     mm = layui.mm;
+     var option = {
         elem: '#test1'
         ,width: '100%'
         ,arrow: 'always'
-        ,height: '298'
+        ,height:'298'
         ,indicator:'none'
-        }
-    carouse1.render(option);
+      }
+      carousel.render(option);
 });
 {% endblock script %}
+

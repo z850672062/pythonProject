@@ -8,10 +8,10 @@
     <!--title标签定义文档标题-->
     <title>{{ title }}</title>
     <!--链接一个外部样式表,来自css/main.css-->
-    <link rel="stylesheet" href="{ % static 'layui/css/layui.css' %}">
-    <link rel="stylesheet" href="{ % static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'layui/css/layui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <!--script脚本标签 可以插入JavaScript-->
-    <script src="{% static 'layui/layui.js %}"></script>
+    <script src="{% static 'layui/layui.js' %}"></script>
 </head>
 <body>
 <div class="header">
@@ -30,9 +30,9 @@
                 <form action="{% url 'commodity:commodity' %}" method="get" class="layui-form" novalidate>
 <!--                    required指示输入字段的值是必需的。placeholder规定帮助用户填写输入字段的提示。autocomplete规定是否使用输入字段的自动完成功能。 -->
                     <input type="text" name="n" required lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入需要的商品">
-                    <button class="layui-btn" lay-submit lay-filter="forDemo">
+                    <button class="layui-btn" lay-submit lay-filter="formDemo">
 <!--                        <i> 标签显示斜体文本效果。-->
-                        <i class="layui-icon" layui-icon-search></i>
+                        <i class="layui-icon layui-icon-search"></i>
                     </button>
                 </form>
             </div>

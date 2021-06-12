@@ -1,7 +1,7 @@
 #项目应用index的views.py
 from django.shortcuts import render
 from django.views.generic.base import TemplateView
-from ..commodity.models import *
+from commodity.models import *
 # Create your views here.
 
 # def indexView(request):

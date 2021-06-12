@@ -27,3 +27,5 @@ class Vocation(models.Model):
 
     class Meta:
         verbose_name = '职业信息'
+
+        
