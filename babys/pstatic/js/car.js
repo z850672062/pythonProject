@@ -1,3 +1,4 @@
+//看书195
 layui.define(['layer'],function(exports){
 	var layer = layui.layer;
 var car = {
@@ -9,6 +10,7 @@ var car = {
       var piecesTotal = document.getElementsByClassName('pieces-total')[0];//总价
       var batchdeletion = document.getElementsByClassName('batch-deletion')[0]//批量删除按钮
       //计算
+//      一
       function getTotal(){
           var seleted = 0,price = 0;
           for(var i = 0; i < uls.length;i++){
@@ -23,6 +25,7 @@ var car = {
       function fn1(){
         alert(1)
       }
+//      二
       // 小计
       function getSubTotal(ul){
         var unitprice = parseFloat(ul.getElementsByClassName('th-su')[0].innerHTML);
@@ -30,7 +33,7 @@ var car = {
         var SubTotal = parseFloat(unitprice*count)
         ul.getElementsByClassName('sum')[0].innerHTML = SubTotal.toFixed(2);
       }
-
+//      三
       for(var i = 0;i < checkInputs.length;i++){
         checkInputs[i].onclick = function(){
           if(this.className === 'check-all check'){
@@ -46,7 +49,7 @@ var car = {
           getTotal()
         }
       }
-
+//      四
       for(var i = 0; i < uls.length;i++){
         uls[i].onclick = function(e){
           e = e || window.event;
@@ -102,7 +105,7 @@ var car = {
           getTotal()
         }
       }
-
+//            五
       batchdeletion.onclick = function(){
           layer.confirm('你确定要删除吗',{
             yes:function(index,layero){

@@ -13,5 +13,7 @@ urlpatterns = [
     path('/logout.html', logoutView, name='logout'),
     #购物车信息页
     path('/shopcart.html', shopcartView, name='shopcart'),
+    #购物车删除商品ajax
+    path('/delete.html', deleteAPI, name='delete'),
 
 ]
