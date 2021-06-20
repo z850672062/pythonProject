@@ -74,18 +74,18 @@ def find_file(file_dir, file_re, expire_time):
                 logging.info('删除目录：[%s]成功' % abs_file)
 
 # 读取配置文件并传入对应的参数给find_file   根据，分割如果参数格式不正确则记录日志
-def read_conf(file_path):
-    with open(file_path,'r',encoding = 'utf-8') as f:
-        # print(f.read())
-        for line in f:
-            line_list = line.strip().split(',')
-            if len(line_list) != 3:
-                logging.warning('%s 行配置不正确' % line.strip())
-                continue
-            file_dir = line_list[0]
-            file_re = line_list[1]
-            expire_time = line_list[2]
-            find_file(file_dir, file_re, expire_time)
+# def read_conf(file_path):
+#     with open(file_path,'r',encoding = 'utf-8') as f:
+#         # print(f.read())
+#         for line in f:
+#             line_list = line.strip().split(',')
+#             if len(line_list) != 3:
+#                 logging.warning('%s 行配置不正确' % line.strip())
+#                 continue
+#             file_dir = line_list[0]
+#             file_re = line_list[1]
+#             expire_time = line_list[2]
+#             find_file(file_dir, file_re, expire_time)
 
 #初始化配置文件写入
 def config_handle(config_path):

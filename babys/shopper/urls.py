@@ -15,5 +15,7 @@ urlpatterns = [
     path('/shopcart.html', shopcartView, name='shopcart'),
     #购物车删除商品ajax
     path('/delete.html', deleteAPI, name='delete'),
+    #支付页面
+    path('/pays.html', paysView, name='pays'),
 
 ]

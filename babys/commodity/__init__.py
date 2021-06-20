@@ -1,1 +1,3 @@
-#主要实现网站的商品列表页 和 商品详细页
+from .apps import CommodityConfig
+
+default_app_config = 'commodity.CommodityConfig'

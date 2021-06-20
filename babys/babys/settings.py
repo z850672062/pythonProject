@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-g!9-u%q$o^(@n=fr6l*q7*1$uby0ikdtq@=tb-6@$x$j*weh5+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -135,7 +135,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'pstatic'),
 )
 #添加静态root 作用是在服务器上部署项目，实现服务器和项目之间的映射
-STATIC_ROOT = os.path.join(BASE_DIR, 'AllStatic')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 #添加媒体资源库 存放用户头像 商品图片等
 MEDIA_URL = '/media/'
