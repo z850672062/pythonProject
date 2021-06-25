@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>首页 - EOMS后台管理系统</title>
+    <link rel="icon" href="/static/favicon.ico" type="image/ico">
+    <meta name="keywords" content="OMS,后台管理系统">
+    <meta name="description" content="基于Bootstrap v3.3.7的后台管理系统">
+    <script type="text/javascript" src="/static/Bootstrap-3-Typeahead-master/bootstrap3-typeahead.js"></script>
+</head>
+
+<body>
+<div class="container-fluid p-t-15">
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div id="toolbar_order" class="toolbar-btn-action">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <button id="btn_add_order" type="button" class="btn btn-sm btn-primary m-r-5">
+                                    <span class="mdi mdi-plus" aria-hidden="true"></span>新建工单
+                                </button>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-daterange input-group js-datepicker" data-auto-close="true"
+                                     data-date-format="yyyy-mm-dd">
+                                    <input class="form-control" type="text" id="date_start" name="date_start"
+                                           placeholder="开始日期" style="height: 32px">
+                                    <span class="input-group-addon">
+                                        <i class="mdi mdi-chevron-right" style="height: 32px"></i>
+                                    </span>
+                                    <input class="form-control" type="text" id="date_end" name="date_end"
+                                           placeholder="结束日期" style="height: 32px">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button id="btn_search" class="btn btn-sm btn-default" type="button">查询</button>
+                                <button id="btn_reset" class="btn btn-sm btn-default" type="button">重置</button>
+
+
+                            </div>
+                        </form>
+                    </div>
+                    <table id="table_order"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        setupDate();
+    })
+    var $table_order = $('#table_order');
+    $table_order.bootstrapTable('destroy').bootstrapTable({
+        classes: 'table table-sm table-bordered table-hover table-striped',
+        url: 'order_list',
+        uniqueId: 'order_id',
+        //idField: 'order_id',             // 每行的唯一标识字段
+        toolbar: '#toolbar_order',       // 工具按钮容器
+        //clickToSelect: true,     // 是否启用点击选中行
+        showColumns: true,         // 是否显示所有的列
+        //showRefresh: true,         // 是否显示刷新按钮
+        //showToggle: true,        // 是否显示详细视图和列表视图的切换按钮(clickToSelect同时设置为true时点击会报错)
+        pagination: true,                    // 是否显示分页
+        //sortOrder: "asc",                    // 排序方式
+        search: true,                      // 是否显示表格搜索，此搜索是客户端搜索
+        height: tableHeight,
+        queryParams: function (params) {
+            return {
+                'date_start': $('#date_start').val(),
+                'date_end': $('#date_end').val(),
+                //limit: params.limit,         // 每页数据量
+                //offset: params.offset,       // sql语句起始索引
+                //page: (params.offset / params.limit) + 1,
+                //sort: params.sort,           // 排序的列名
+                //sortOrder: params.order      // 排序方式'asc' 'desc'
+            };
+        },
+        //sidePagination: "server",            // 分页方式：client客户端分页，server服务端分页
+        //pageNumber: 1,                       // 初始化加载第一页，默认第一页
+        //pageSize: 10,                        // 每页的记录行数
+        //pageList: [10, 25, 50, 100],         // 可供选择的每页的行数
+
+        showExport: true,        // 是否显示导出按钮, 导出功能需要导出插件支持(tableexport.min.js)
+        exportDataType: "basic", // 导出数据类型, 'basic':当前页, 'all':所有数据, 'selected':选中的数据
+        exportTypes: ['excel'],  //导出文件类型
+        columns: [
+            /**
+             {
+                checkbox: true,    // 是否显示复选框
+                align: 'center',
+                valign: 'middle',
+                width: 40,
+            },
+             **/
+            {
+                title: '序号',
+                width: 45,
+                align: 'center',
+                valign: 'middle',
+                formatter: function (value, row, index) {
+                    //var options = $table_order.bootstrapTable('getOptions');
+                    //return options.pageSize * (options.pageNumber - 1) + index + 1;
+                    return index + 1;
+                }
+            }, {
+                field: 'customer_name',
+                title: '客户名称',
+                align: 'center',
+                valign: 'middle',
+                width: 140,
+            }, {
+                field: 'question_type',
+                title: '问题分类',
+                valign: 'middle',
+            },{
+                field: 'description',
+                title: '问题描述',
+                valign: 'middle',
+            }, {
+                field: 'operator_name',
+                title: '维修工',
+                align: 'center',
+                valign: 'middle',
+                width: 100,
+            }, {
+                field: 'create_time',
+                title: '创建时间',
+                width: 160,
+                //visible: false,
+                align: 'center',
+                valign: 'middle',
+            }, {
+                field: 'update_time',
+                title: '修改时间',
+                width: 160,
+                visible: false,
+                align: 'center',
+                valign: 'middle',
+            }, {
+                field: 'status',
+                title: '是否完成',
+                width: 100,
+                align: 'center',
+                valign: 'middle',
+                sortable: true,
+                formatter: function (value, row, index) {
+                    var is_checked = value > 0 ? 'checked="checked"' : '';
+                    //return '<label class="lyear-switch switch-solid switch-success lyear-status"><input type="checkbox" ' + is_checked + '><span onClick="update_status(' + row.order_id + ', ' + value + ')"></span></label>';
+                    //return value;
+                    if (value > 0) {
+                        return '<button type="button" class="btn btn-xs btn-round btn-success" onclick="update_status(' + row.order_id + ',' + value + ')">已完成</button>';
+                    } else {
+                        return '<button type="button" class="btn btn-xs btn-round btn-danger" onclick="update_status(' + row.order_id + ',' + value + ')">未处理</button>';
+                    }
+                }
+            }, {
+                field: 'operate',
+                title: '操作',
+                align: 'center',
+                valign: 'middle',
+                width: 120,
+                formatter: function (value, row, index) {
+                    return '<a href="#!" class="btn btn-xs btn-default m-r-5 edit-btn" title="编辑" data-toggle="tooltip"><i class="mdi mdi-pencil"></i></a>' +
+                        '<a href="#!" class="btn btn-xs btn-default m-r-5 show-btn" title="查看" data-toggle="tooltip"><i class="mdi mdi-eye"></i></a>' +
+                        '<a href="#!" class="btn btn-xs btn-default del-btn" title="删除" data-toggle="tooltip"><i class="mdi mdi-window-close"></i></a>';
+
+                },  // 自定义方法
+                events: {
+                    'click .edit-btn': function (event, value, row, index) {
+                        layer.msg('更新' + row.order_id);
+                    },
+                    'click .show-btn': function (event, value, row, index) {
+                        layer.msg('查看' + row);
+                    },
+                    'click .del-btn': function (event, value, row, index) {
+                        //layer.msg('删除' + row.order_id);
+                        //采用layer的确认弹框
+                        var _cur_lock_ = false;
+                        layer.confirm('确定删除吗？', function (index) {
+                            if (!_cur_lock_) {
+                                _cur_lock_ = true;
+                            } else {
+                                return false;
+                            }
+                            $.getJSON('order_del', {'order_id': row.order_id}, function (res) {
+                                if (res == '200') {
+                                    layer.msg('删除成功', {icon: 1});
+                                    $table_order.bootstrapTable('refresh');
+                                } else layer.msg('删除失败', {icon: 2});
+                            })
+                        });
+                    },
+                }
+            }],
+        onRefresh: function (data) {
+
+        },
+        onLoadSuccess: function (data) {
+            //layer.msg('成功', {icon: 1, time: 800});
+
+
+        },
+        onLoadError: function (data) {
+
+        }
+    });
+    var customer_name2id = {};
+    var question_type2id = {};
+    var operator_name2id = {};
+    $('#btn_add_order').click(function () {
+        console.log('btn_add_order')
+        var index = layer.open({
+            //type: 1,//Page层类型
+            area: [$(window).width() * 0.4 + 'px', $(window).height() * 0.7 + 'px'],
+            title: '新建工单',
+            //shade: 0,//遮罩透明度
+            //fixed: false,    //取消固定定位，因为固定定位是相对body的
+            //offset: [h],
+            //maxmin: true, //允许全屏最小化
+            //anim: -1,//0-6的动画形式，-1不开启
+            content: '<div class="col-md-12" id="panel">\n' +
+                '    <div class="card">\n' +
+                '        <div class="card-body">\n' +
+                '            <div class="input-group m-b-10">\n' +
+                '                <span class="input-group-addon">客户名称</span>\n' +
+                '                <input type="text" class="form-control" id="order_add_customer" data-provide="typeahead"\n' +
+                '                       autocomplete="off" placeholder="请输入关键字" aria-label="">\n' +
+                '            </div>\n' +
+                '            <div class="input-group m-b-10">\n' +
+                '                <span class="input-group-addon">问题类别</span>\n' +
+                '                <input type="text" class="form-control" id="order_add_qtype" data-provide="typeahead"\n' +
+                '                       autocomplete="off" placeholder="故障分类" aria-label="">\n' +
+                '            </div>\n' +
+                '            <div class="input-group m-b-10">\n' +
+                '                <span class="input-group-addon">问题描述</span>\n' +
+                '                <textarea class="form-control" id="order_add_qdesc" name="input_question_desc" rows="2"\n' +
+                '                          placeholder="请输入故障具体描述.." aria-label=""></textarea>\n' +
+                '            </div>\n' +
+                '            <div class="input-group m-b-10">\n' +
+                '                <span class="input-group-addon">维修人员</span>\n' +
+                '                <input type="text" class="form-control" id="order_add_operator" data-provide="typeahead"\n' +
+                '                       autocomplete="off" placeholder="请输入关键字" aria-label="">\n' +
+                '            </div>\n' +
+                '        </div>\n' +
+                '    </div>\n' +
+                '</div>\n',
+            //content: $('#panel'),
+
+            yes: function (index, layero) {
+                //do something
+                layer.close(index); //如果设定了yes回调，需进行手工关闭
+                layer.msg('请稍等...', {icon: 16});
+                var cname = $("#order_add_customer").typeahead("getActive");//获取该值
+                var oname = $("#order_add_operator").typeahead("getActive");//获取该值
+                var qtype = $("#order_add_qtype").typeahead("getActive");//获取该值
+                console.log(cname, oname, qtype)
+                if (!cname) {
+                    cname = $('#order_add_customer').val();
+                }
+                if (!oname) {
+                    oname = $('#order_add_operator').val();
+                }
+                if (!qtype) {
+                    qtype = $('#order_add_qtype').val();
+                }
+                console.log('cname', cname, 'oname', oname, 'qtype', qtype)
+                $.post('order_add', {
+                    'customer_name': cname,
+                    'question_type': qtype,
+                    'description': $('#order_add_qdesc').val(),
+                    'operator_name': oname,
+                }, function (res) {
+                    layer.closeAll();
+                    if (res == 200) {
+                        layer.msg('成功!', {icon: 6, time: 600});
+                        $table_order.bootstrapTable('refresh');
+                    } else layer.msg('失败!请确认参数是否有误', {icon: 5});
+                });
+            }
+        });
+        $("#order_add_customer").typeahead({
+            //source: dataSource, // 数据源
+            items: 5,//最多显示个数，非必须
+            updater: function (item) {//非必须
+                return item;//这里一定要return，否则选中不显示，外加调用display的时候null reference错误。
+            },
+            displayText: function (item) {
+                //return "选：" + item;//返回字符串,非必须
+                return item;//返回字符串,非必须
+            },
+            delay: 300,//延迟时间，非必须
+            source: function (query, process) { //query是输入框输入的文本内容, process是一个回调函数
+                $.getJSON("getTypeaheadData", {'type': 'customer', 'keyword': query}, function (data) {
+                    var arr = [];
+                    for (let i = 0; i < data.length; i++) {
+                        customer_name2id[data[i].customer_name] = data[i].customer_id;
+                        arr.push(data[i].customer_name)
+                    }
+                    process(arr);
+                });
+            },
+            afterSelect: function (item) {       //选择项之后的事件，item是当前选中的选项
+                //$("#hidden").val(objects[item]); //为隐藏输入框赋值
+                //console.log(item, customer_name2id[item])
+                //var val = $("#order_add_customer").typeahead("getActive");//获取该值
+                //console.log(val);
+            },
+        });
+        $("#order_add_qtype").typeahead({
+            //source: dataSource, // 数据源
+            items: 5,//最多显示个数，非必须
+            updater: function (item) {//非必须
+                return item;//这里一定要return，否则选中不显示，外加调用display的时候null reference错误。
+            },
+            displayText: function (item) {
+                //return "选：" + item;//返回字符串,非必须
+                return item;//返回字符串,非必须
+            },
+            delay: 300,//延迟时间，非必须
+            source: function (query, process) { //query是输入框输入的文本内容, process是一个回调函数
+                $.getJSON("getTypeaheadData", {'type': 'question', 'keyword': query}, function (data) {
+                    var arr = [];
+                    for (let i = 0; i < data.length; i++) {
+                        question_type2id[data[i].question_type] = data[i].question_id;
+                        arr.push(data[i].question_type)
+                    }
+                    process(arr);
+                });
+            },
+            afterSelect: function (item) {       //选择项之后的事件，item是当前选中的选项
+                //$("#hidden").val(objects[item]); //为隐藏输入框赋值
+                //console.log(item, question_type2id[item])
+                //var val = $("#order_add_customer").typeahead("getActive");//获取该值
+                //console.log(val);
+            },
+        });
+        $("#order_add_operator").typeahead({
+            //source: dataSource, // 数据源
+            items: 5,//最多显示个数，非必须
+            updater: function (item) {//非必须
+                return item;//这里一定要return，否则选中不显示，外加调用display的时候null reference错误。
+            },
+            displayText: function (item) {
+                //return "选：" + item;//返回字符串,非必须
+                return item;//返回字符串,非必须
+            },
+            delay: 300,//延迟时间，非必须
+            source: function (query, process) { //query是输入框输入的文本内容, process是一个回调函数
+                $.getJSON("getTypeaheadData", {'type': 'operator', 'keyword': query}, function (data) {
+                    var arr = [];
+                    for (let i = 0; i < data.length; i++) {
+                        operator_name2id[data[i].operator_name] = data[i].operator_id;
+                        arr.push(data[i].operator_name)
+                    }
+                    process(arr);
+                });
+            },
+            afterSelect: function (item) {       //选择项之后的事件，item是当前选中的选项
+                //$("#hidden").val(objects[item]); //为隐藏输入框赋值
+                //console.log(item, operator_name2id[item])
+                //var val = $("#order_add_customer").typeahead("getActive");//获取该值
+                //console.log(val);
+            },
+        });
+    })
+    $('#btn_search').click(function () {
+        $table_order.bootstrapTable('refresh');
+    })
+    $('#btn_reset').click(function () {
+        setupDate();
+    })
+
+    function update_status(order_id, value) {
+        $.post('update_status', {'order_id': order_id, 'status': (value > 0) ? 0 : 1}, function (res) {
+            if (res == 200) {
+                layer.msg('状态更新成功', {offset: ['290px', ''], time: 800});
+            } else layer.msg('失败', function () {
+            });
+            $table_order.bootstrapTable('refresh');
+        })
+    }
+
+    function getDataList(id, value) {
+        console.log('aa')
+        console.log(id, value)
+    }
+
+    function setupDate() {
+        $('#date_start').val(moment().subtract(1, 'months').format('YYYY-MM-DD'))
+        $("#date_end").val(moment().format('YYYY-MM-DD'))
+    }
+
+
+</script>
+{#日期控件初始化#}
+<script type="text/javascript" src="/static/base/js/main.min.js"></script>
+</body>
+
+</html>
