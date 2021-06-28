@@ -7,7 +7,16 @@ import zipfile
 import _pickle as p
 import hashlib
 import pathlib
+import logging
 from configobj import ConfigObj
+
+
+# 记录日志
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s %(filename)s [line:%(lineno)-1d] %(levelname)s %(message)s',
+                    datefmt='%a, %d %b %Y %H:%M:%S',
+                    filename='BackupError.log',
+                    filemode='a')
 
 # md5校验
 def md5check(fname):
@@ -135,6 +144,7 @@ def config_read():
     return temp_dict
 
 if __name__ == '__main__':
+
     try:
         # 实例化一个ConfigObj对象
         config = ConfigObj()
@@ -170,3 +180,4 @@ if __name__ == '__main__':
 
     except Exception as e:
         print("报错了！!！",e)
+        logging.warning(e)
