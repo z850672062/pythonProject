@@ -7,6 +7,7 @@
 
 import os
 import pathlib
+import  sys
 from configobj import ConfigObj
 #初始化配置文件写入
 
@@ -18,7 +19,7 @@ def config_handle():
     config.write()
 
 #配置文件读取
-def config_read():
+def config_read(config_path):
     config = ConfigObj(config_path,encoding='UTF-8')
     temp_dict = {}
     temp_dict['Path'] = config['ReName']['Path']
@@ -36,30 +37,38 @@ def rename(config_dict):
         print(path)
 
 
+def create_cfg():
+
+    # 当前路径
+    path_0 = pathlib.Path.cwd()
+    # 获取程序本身名称
+    base_name = os.path.basename(sys.argv[0]).split('.')[0]
+    # 配置名称
+    config_name = '%sCfg.ini' % base_name
+    # 配置路径
+    config_path = str(path_0) + '\\' + config_name
+    # 判断目录下是否存在配置文件，不存在就生成
+    config_judge = os.path.isfile(str(config_path))
+    if config_judge == True:
+        print('配置文件检查存在，将开始运行主函数')
+    else:
+        print('配置文件不存在,生成中...')
+        config.filename = str(config_path)
+        config_handle()
+        print('生成完毕！')
+        print('请打开%s文件修改你的数据保存之后再次打开该程序。' % config_name)
+        input()
+    return config_path
 if __name__ == '__main__':
     try:
         # 实例化一个ConfigObj对象
         config = ConfigObj()
-        # 当前路径
-        path_0 = pathlib.Path.cwd()
-        # 配置名称
-        config_name = 'ReNameCfg.ini'
-        # 配置路径
-        config_path = str(path_0) + '\\' + config_name
-        # 判断目录下是否存在配置文件，不存在就生成
-        config_judge = os.path.isfile(str(config_path))
-        if config_judge == True:
-            print('配置文件检查存在，将开始运行主函数')
-        else:
-            print('配置文件不存在,生成中...')
-            config.filename = str(config_path)
-            config_handle()
-            print('生成完毕！')
-            print('请打开%s文件修改你的数据保存之后再次打开该程序。' % config_name)
-            input()
+        # 实例化 create_cfg返回的config_path
+        config_path =  create_cfg()
+
         # 实例化文件读取
-        config_dict = config_read()
-        rename(config_dict)
+        config_dict = config_read(config_path)
+
 
     except Exception as e:
         print('报错了！！！', e)
