@@ -1,6 +1,14 @@
 #!/usr/bin/env python 
 # encoding: utf-8
 
+"""
+2021-6-29 16:55:19
+新增功能：
+加入日志系统，和路径排除功能：
+报错日志和路径排除日志
+
+"""
+
 import time
 import os
 import zipfile
@@ -34,10 +42,11 @@ def md5check(fname):
     #         返回加密字符串
     return m.hexdigest()
 # 全盘备份
-def full_backup(config_dict,path_0):
+def full_backup(config_dict):
     src_dirlist = config_dict['src_dir']
 
     dst_dir = config_dict['dst_dir']
+    expath_list = config_dict['expath_list']
     # md5file = str(path_0) + '\\' + config_dict['md5file']
     # md5dict = {}
     # 定义par_dir, base_dir 两个参数，返回src_dir去掉尾部/字符串，并分离出目录路径和文件名给par_dir, base_dir 两个参数赋值
@@ -55,13 +64,20 @@ def full_backup(config_dict,path_0):
                 for fname in files:
                     path2 = "%s\\%s" % (path, fname)
                     print(path2)
-                    myzip.write(path2, compress_type=zipfile.ZIP_DEFLATED)
+                    if path2 in expath_list:
+                        logging.info('完全备份排除路径：' + path2)
+                        pass;
+                    else:
+                        myzip.write(path2, compress_type=zipfile.ZIP_DEFLATED)
+
+
 
 # 增量备份 根据md5值对比来对个别文件进行增量备份
 def incr_backup(config_dict,path_0):
     src_dirlist = config_dict['src_dir']
-
     dst_dir = config_dict['dst_dir']
+    expath_list = config_dict['expath_list']
+
     md5file = str(path_0) + '\\' + config_dict['md5file']
     md5dict = {}
     md5new = {}
@@ -97,8 +113,12 @@ def incr_backup(config_dict,path_0):
                 if md5old.get(key) != md5new[key]:
                     # path2 = "%s\\%s" % (path, fname)
                     # print(path2)
-                    print(key)
-                    myzip.write(key, compress_type=zipfile.ZIP_DEFLATED)
+                    if key in expath_list:
+                        logging.info('增量备份排除路径：' + key)
+                        pass;
+                    else:
+                        myzip.write(key, compress_type=zipfile.ZIP_DEFLATED)
+
     else:
         # 遍历src_dirlist中的路径并打包
         print('生成增量备份压缩包中...')
@@ -109,7 +129,11 @@ def incr_backup(config_dict,path_0):
                     for fname in files:
                         path2 = "%s\\%s" % (path, fname)
                         print(path2)
-                        myzip.write(path2, compress_type=zipfile.ZIP_DEFLATED)
+                        if path2 in expath_list:
+                            logging.info('增量备份排除路径：' + path2)
+                            pass;
+                        else:
+                            myzip.write(path2, compress_type=zipfile.ZIP_DEFLATED)
 
             # 将path:md5写入md5dict用于保存md5.data
             for path, folder, files in os.walk(src_dir):
@@ -129,6 +153,7 @@ def config_handle():
     config['copy'] = {}
     config['copy']['src_dir'] = 'path,path,...'  #返回的是列表list格式
     config['copy']['dst_dir'] = 'path'
+    config['copy']['expath_list'] = 'path,..'
     config['copy']['md5file'] = 'md5.data'
     config['copy']['f_backup_week'] = 'Mon'
     config.write()
@@ -139,6 +164,7 @@ def config_read():
     temp_dict = {}
     temp_dict['src_dir'] = config['copy']['src_dir']
     temp_dict['dst_dir'] = config['copy']['dst_dir']
+    temp_dict['expath_list'] = config['copy']['expath_list']
     temp_dict['md5file'] = config['copy']['md5file']
     temp_dict['f_backup_week'] = config['copy']['f_backup_week']
     return temp_dict
@@ -172,7 +198,7 @@ if __name__ == '__main__':
         if config_judge == True:
             if time.strftime('%a') == f_backup_week:
                 # 对完全备份进行传参
-                full_backup(config_dict, path_0)
+                full_backup(config_dict)
 
             else:
                 # 对增量备份进行传参
