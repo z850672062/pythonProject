@@ -96,10 +96,15 @@ def incr_backup(config_dict,path_0):
             # 将path:md5写入md5new用于保存md5.data
             for path, folder, files in os.walk(src_dir):
                 for fname in files:
-                    # 每遍历一次将src_dir的path 和 文件名相加
-                    full_path = os.path.join(path, fname)
-                    # 每次将full_path的md5校验码加入md5字典 ： path:md5
-                    md5new[full_path] = md5check(full_path)
+                    path2 = "%s\\%s" % (path, fname)
+                    if path2 in expath_list:
+                        pass;
+                    else:
+                        # 每遍历一次将src_dir的path 和 文件名相加
+                        full_path = os.path.join(path, fname)
+                        # 每次将full_path的md5校验码加入md5字典 ： path:md5
+                        md5new[full_path] = md5check(full_path)
+
         # print(md5new)
         # 使用load加载之前的mdf5文件
         with open(md5file, 'rb') as fobj:
@@ -111,14 +116,9 @@ def incr_backup(config_dict,path_0):
         with zipfile.ZipFile(full_name, 'a') as myzip:
             for key in md5new:
                 if md5old.get(key) != md5new[key]:
+                    myzip.write(key, compress_type=zipfile.ZIP_DEFLATED)
                     # path2 = "%s\\%s" % (path, fname)
                     # print(path2)
-                    if key in expath_list:
-                        logging.info('增量备份排除路径：' + key)
-                        pass;
-                    else:
-                        myzip.write(key, compress_type=zipfile.ZIP_DEFLATED)
-
     else:
         # 遍历src_dirlist中的路径并打包
         print('生成增量备份压缩包中...')
@@ -138,10 +138,14 @@ def incr_backup(config_dict,path_0):
             # 将path:md5写入md5dict用于保存md5.data
             for path, folder, files in os.walk(src_dir):
                 for fname in files:
-                    # 每遍历一次contents将src_dir的path 和 文件名相加
-                    full_path = os.path.join(path, fname)
-                    # 每次将full_path的md5校验码加入md5字典 ： path:md5
-                    md5dict[full_path] = md5check(full_path)
+                    path2 = "%s\\%s" % (path, fname)
+                    if path2 in expath_list:
+                        pass;
+                    else:
+                        # 每遍历一次contents将src_dir的path 和 文件名相加
+                        full_path = os.path.join(path, fname)
+                        # 每次将full_path的md5校验码加入md5字典 ： path:md5
+                        md5dict[full_path] = md5check(full_path)
             # print(md5dict)
             # 使用pickle序列化并写入文件
             with open(md5file, 'wb') as fobj:
