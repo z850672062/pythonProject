@@ -66,7 +66,7 @@ def rename(config_dict):
     handle_filelist = []
 
     num = -1
-    # Pointer为1将会修改文件名前缀   例如：test.txt → 1、test.txt
+    # Pointer为1将会修改目录和文件名前缀   例如：test.txt → 1、test.txt
     if Pointer == '1':
         # 给file_name_list赋值 ,值为os返回路径全部名称
         file_name_list = os.listdir(str(Path))
@@ -104,6 +104,39 @@ def rename(config_dict):
             num = num + 1
             # path.with_name更改路径名称, 更改最后一级路径名（文件名）
             path.rename(path.with_name(handle_filelist[num]))
+
+    if Pointer == '3':
+        # 给file_name_list赋值 ,值为os返回路径全部名称
+        file_name_list = os.listdir(str(Path))
+
+
+
+        print(file_name_list)
+
+        for path in pathlib.Path(Path).iterdir():
+            if pathlib.Path(path).is_dir():
+                
+
+                # num = num + 1
+                # # path.with_name更改路径名称, 更改最后一级路径名（文件名）
+                # path.rename(path.with_name(handle_filelist[num]))
+                # print(path)
+
+        # # 注释
+        # # enumerate函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中 start为设置索引下标
+        # for index, file_name in enumerate(file_name_list,start=1):
+        #     handle_file = str(index) + '、' + file_name
+        #     handle_filelist.append(handle_file)
+        # # handle_filelist为处理过的文件列表
+        # print(handle_filelist)
+        # # 循环遍历指定path中的目录和文件
+        # for path in pathlib.Path(Path).iterdir():
+        #     # num参数让handle_filelist[num]循环遍历吃list中的数据
+        #     num = num + 1
+        #     # path.with_name更改路径名称, 更改最后一级路径名（文件名）
+        #     path.rename(path.with_name(handle_filelist[num]))
+
+
 
 if __name__ == '__main__':
     try:
