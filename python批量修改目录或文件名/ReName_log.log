@@ -1,0 +1,6 @@
+Wed, 30 Jun 2021 20:37:13 ReName.py [line:143] INFO ['a', 'b', 'c', 'test - 副本']---['1、a', '2、b', '3、c', '4、test - 副本']
+Wed, 30 Jun 2021 20:39:05 ReName.py [line:143] INFO ['1、a', '2、b', '3、c', '4、test - 副本']转换----→['1、1、a', '2、2、b', '3、3、c', '4、4、test - 副本']
+Wed, 30 Jun 2021 20:51:26 ReName.py [line:119] INFO ['1、1、a', '2、2、b', '3、3、c', '4、4、test - 副本', '新建文本文档 - 副本.txt', '新建文本文档.txt']------['a', 'b', 'c', 'test - 副本', '新建文本文档 - 副本.txt', '新建文本文档.txt']
+Wed, 30 Jun 2021 20:51:44 ReName.py [line:148] INFO ['a', 'b', 'c', 'test - 副本']------['1、a', '2、b', '3、c', '4、test - 副本']
+Wed, 30 Jun 2021 20:58:12 ReName.py [line:165] WARNING expected str, bytes or os.PathLike object, not list
+Wed, 30 Jun 2021 20:58:20 ReName.py [line:165] WARNING expected str, bytes or os.PathLike object, not list
