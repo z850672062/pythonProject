@@ -11,6 +11,7 @@
 
 import time
 import os
+import re
 import zipfile
 import _pickle as p
 import hashlib
@@ -68,7 +69,11 @@ def full_backup(config_dict):
                         logging.info('完全备份排除路径：' + path2)
                         pass;
                     else:
-                        myzip.write(path2, compress_type=zipfile.ZIP_DEFLATED)
+                        try:
+                            myzip.write(path2, compress_type=zipfile.ZIP_DEFLATED)
+                        except Exception as e:
+                            logging.warning("zip打包跳过错误文件" + str(e))
+                            continue;
 
 
 
@@ -76,7 +81,7 @@ def full_backup(config_dict):
 def incr_backup(config_dict,path_0):
     src_dirlist = config_dict['src_dir']
     dst_dir = config_dict['dst_dir']
-    expath_list = config_dict['expath_list']
+    expath_list = list(config_dict['expath_list'])
 
     md5file = str(path_0) + '\\' + config_dict['md5file']
     md5dict = {}
@@ -100,10 +105,16 @@ def incr_backup(config_dict,path_0):
                     if path2 in expath_list:
                         pass;
                     else:
-                        # 每遍历一次将src_dir的path 和 文件名相加
-                        full_path = os.path.join(path, fname)
-                        # 每次将full_path的md5校验码加入md5字典 ： path:md5
-                        md5new[full_path] = md5check(full_path)
+                        try:
+                            # 每遍历一次将src_dir的path 和 文件名相加
+                            full_path = os.path.join(path, fname)
+                            # 每次将full_path的md5校验码加入md5字典 ： path:md5
+                            md5new[full_path] = md5check(full_path)
+                        except Exception as e:
+                            print("报错了！！！", e)
+                            logging.warning("md5新字典数据生成跳过该错误文件" + str(e))
+                            continue;
+
 
         # print(md5new)
         # 使用load加载之前的mdf5文件
@@ -116,9 +127,12 @@ def incr_backup(config_dict,path_0):
         with zipfile.ZipFile(full_name, 'a') as myzip:
             for key in md5new:
                 if md5old.get(key) != md5new[key]:
-                    myzip.write(key, compress_type=zipfile.ZIP_DEFLATED)
-                    # path2 = "%s\\%s" % (path, fname)
-                    # print(path2)
+                    try:
+                        myzip.write(key, compress_type=zipfile.ZIP_DEFLATED)
+                    except Exception as e:
+                        logging.warning("跳过该错误文件" + str(e))
+                        continue;
+
     else:
         # 遍历src_dirlist中的路径并打包
         print('生成增量备份压缩包中...')
@@ -133,7 +147,11 @@ def incr_backup(config_dict,path_0):
                             logging.info('增量备份排除路径：' + path2)
                             pass;
                         else:
-                            myzip.write(path2, compress_type=zipfile.ZIP_DEFLATED)
+                            try:
+                                myzip.write(path2, compress_type=zipfile.ZIP_DEFLATED)
+                            except Exception as e:
+                                logging.warning("zip打包跳过错误文件" + str(e))
+                                continue;
 
             # 将path:md5写入md5dict用于保存md5.data
             for path, folder, files in os.walk(src_dir):
@@ -142,10 +160,17 @@ def incr_backup(config_dict,path_0):
                     if path2 in expath_list:
                         pass;
                     else:
-                        # 每遍历一次contents将src_dir的path 和 文件名相加
-                        full_path = os.path.join(path, fname)
-                        # 每次将full_path的md5校验码加入md5字典 ： path:md5
-                        md5dict[full_path] = md5check(full_path)
+                        try:
+                            # 每遍历一次contents将src_dir的path 和 文件名相加
+                            full_path = os.path.join(path, fname)
+                            # 每次将full_path的md5校验码加入md5字典 ： path:md5
+                            md5dict[full_path] = md5check(full_path)
+                        except Exception as e:
+                            print("报错了！！！", e)
+                            logging.warning("md5字典数据生成跳过该错误文件" + str(e))
+                            continue;
+
+
             # print(md5dict)
             # 使用pickle序列化并写入文件
             with open(md5file, 'wb') as fobj:
@@ -208,6 +233,8 @@ if __name__ == '__main__':
                 # 对增量备份进行传参
                 incr_backup(config_dict, path_0)
 
+        logging.info('备份完毕')
+
     except Exception as e:
-        print("报错了！!！",e)
         logging.warning(e)
+

@@ -89,9 +89,13 @@ def rename(config_dict):
     if Pointer == '2':
         # 给file_name_list赋值 ,值为os返回路径全部名称
         file_name_list = os.listdir(str(Path))
+        print(file_name_list)
         # 循环遍历参数中的文件名称 并进行名称处理和加入list
         for i in file_name_list:
-            hand_file = max(i.split('、'))
+
+            l1 = i.split('、')
+            hand_file = l1[len(l1) - 1]
+            # print(hand_file)
             handle_filelist.append(hand_file)
         print(handle_filelist)
         # 循环遍历指定path中的目录和文件
