@@ -6,12 +6,15 @@
 新增功能：
 加入日志系统，和路径排除功能：
 报错日志和路径排除日志
+2021-7-1 13:16:56
+修改完全备份：
+先完全备份然后删除上星期
 
 """
 
 import time
 import os
-import re
+import datetime
 import zipfile
 import _pickle as p
 import hashlib
@@ -177,6 +180,28 @@ def incr_backup(config_dict,path_0):
                 p.dump(md5dict, fobj, 0)
         incr_backup(config_dict,path_0)
 
+# 删除完全备份（指定星期备份完成后删除上次备份的完全备份）
+def del_fullback(config_dict):
+    dst_dir = config_dict['dst_dir']
+    # 获取系统当前时间
+    today = datetime.datetime.now()
+    # 7天
+    n_days = datetime.timedelta(days=int(7))
+    # 7天前日期
+    n_days_agos = (today - n_days).strftime('%Y%m%d')
+
+    # print(n_days_agos)
+    n_days_fullbackup_file = 'full_%s.zip' % n_days_agos
+    # print(n_days_fullbackup_file)
+    # 遍历指定路径的所有文件，加入if判断文件是否存在 ，存在就删除
+    for path in pathlib.Path(dst_dir).iterdir():
+        if n_days_fullbackup_file in str(path):
+            # unlink方法可以删除文件和取消链接
+            pathlib.Path(str(path)).unlink()
+            logging.info('删除7天前的完全备份文件:%s' % n_days_fullbackup_file)
+
+
+
 #初始化配置文件写入
 def config_handle():
     config['copy'] = {}
@@ -228,12 +253,16 @@ if __name__ == '__main__':
             if time.strftime('%a') == f_backup_week:
                 # 对完全备份进行传参
                 full_backup(config_dict)
+                logging.info('完全备份完毕')
+                # 删除
+                del_fullback(config_dict)
 
             else:
                 # 对增量备份进行传参
                 incr_backup(config_dict, path_0)
+                logging.info('增量备份完毕')
 
-        logging.info('备份完毕')
+
 
     except Exception as e:
         logging.warning(e)
