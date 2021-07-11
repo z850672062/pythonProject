@@ -54,10 +54,10 @@ def guess_number():
                 break
 
         # 一次游戏平均几轮猜中 =总游戏轮数/总游戏次数
-        average1 =('%.2f'%(all_count/times))
+        average1 = all_count/times
         # 最快猜出轮数
         fast_count =  min(fast_count_list)
-        print('%s，你已经玩了%d次，最少%d轮猜出答案,平均%s轮猜出答案' % (player,times,fast_count,str(average1)))
+        print('%s，你已经玩了%d次，最少%d轮猜出答案,平均%.2f轮猜出答案' % (player,times,fast_count,average1))
         judge = input('是否继续游戏？(输入y继续，其他退出)')
         if judge != 'y':
             print('退出游戏，欢迎下次再来！')
