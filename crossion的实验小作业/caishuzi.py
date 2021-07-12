@@ -18,6 +18,7 @@ txt文件中有历史记录（数据）的话，询问是否读取历史记录�
 
 """
 import random
+import pathlib
 
 
 def guess_number():
@@ -84,26 +85,31 @@ def guess_number():
 
 def init_file(guess_dict):
     print(guess_dict)
+    with open('game_one_user.txt', 'w+', encoding='utf-8') as p:
+        # 循环遍历字典中的key和value值写入到txt文本
+        for k in guess_dict:
+            str2 = str(k + ' ' + str(guess_dict[k]))
+            p.writelines(str2)
 
-    with open('game_one_user.txt' ,'r' ,encoding='utf-8') as p:
+def history_file(guess_dict):
+    with open('game_one_user.txt', 'r', encoding='utf-8') as p:
         list2 = p.readlines()
-
         print(list2)
 
 
-    # with open('game_one_user.txt' , 'w+' ,encoding='utf-8' ) as p:
-    #     # 循环遍历字典中的key和value值写入到txt文本
-    #     for k in guess_dict:
-    #         str2 = str(k + ' ' + str(guess_dict[k]))
-    #         # print(str2)
-    #         p.writelines(str2)
-#
-# def history_file():
-
-
 if __name__ == '__main__':
-    guess_dict = guess_number()
-    init_file(guess_dict)
+    judge = pathlib.Path('game_one_user.txt').exists()
+    # 判断文件是否存在，不存在生成，存在读档写入
+    if judge != True:
+        print('生成游戏数据文件中...')
+        guess_dict = guess_number()
+        init_file(guess_dict)
+    else:
+        print('读取游戏数据,继续上次游戏')
+
+        history_file(guess_dict)
+
+
 
 
 
