@@ -11,6 +11,11 @@ Rev2021-7-8 09:30:01
 统计数据：玩家姓名、总游戏次数（玩家每猜中答案算玩了一次游戏）、总游戏轮数（玩家每猜一个数字算玩了一轮游戏）、
 最快猜中轮数，
 最后将结果保存在文件中（保存在game_one_user.txt)中
+Rev2021-7-12 14:32:56
+新增内容：
+txt文件中有历史记录（数据）的话，询问是否读取历史记录，
+没有数值，不询问直接开始游戏。
+
 """
 import random
 
@@ -19,8 +24,10 @@ def guess_number():
     # 猜数字数据字典
     guess_dict = {}
     player = input('请输入你的名字：')
-    # 添加玩家名
-    guess_dict['玩家'] = player
+
+    # # 添加玩家名
+    # guess_dict['玩家'] = player
+
     # 记录次数
     times = 0
     # 记录最快猜中轮数列表
@@ -31,7 +38,7 @@ def guess_number():
     while True:
         # 生成随机数1-100
         random_num = random.randint(1, 100)
-        # print(random_num)
+        print(random_num)
 
         print('你好，欢迎来到猜数字小游戏！！！')
         print('废话不多说，咋们开始吧，请输入你想到的数字(1 - 100)：')
@@ -62,28 +69,41 @@ def guess_number():
         if judge != 'y':
             print('退出游戏，欢迎下次再来！')
             break
+    # 添加key和value的数据
+    guess_dict[player] = str(str(times) + ' ' + str(fast_count) + ' ' + str(all_count))
+    # print(guess_dict)
 
-    # 添加总游戏次数
-    guess_dict['总游戏次数'] = times
-    # 添加总游戏轮数
-    guess_dict['总游戏轮数'] = all_count
-    # 添加最快猜中轮数
-    guess_dict['最快猜中轮数'] = fast_count
+    # # 添加总游戏次数
+    # guess_dict['总游戏次数'] = times
+    # # 添加总游戏轮数
+    # guess_dict['总游戏轮数'] = all_count
+    # # 添加最快猜中轮数
+    # guess_dict['最快猜中轮数'] = fast_count
 
     return guess_dict
 
-def game_file(guess_dict):
-    # print(guess_dict)
-    with open('game_one_user.txt' , 'w+' ,encoding='utf-8' ) as p:
-        # 循环遍历字典中的key和value值写入到txt文本
-        for k in guess_dict:
-            str2 = str(k + ':' + str(guess_dict[k])+ '\n')
-            # print(str2)
-            p.writelines(str2)
+def init_file(guess_dict):
+    print(guess_dict)
+
+    with open('game_one_user.txt' ,'r' ,encoding='utf-8') as p:
+        list2 = p.readlines()
+
+        print(list2)
+
+
+    # with open('game_one_user.txt' , 'w+' ,encoding='utf-8' ) as p:
+    #     # 循环遍历字典中的key和value值写入到txt文本
+    #     for k in guess_dict:
+    #         str2 = str(k + ' ' + str(guess_dict[k]))
+    #         # print(str2)
+    #         p.writelines(str2)
+#
+# def history_file():
+
 
 if __name__ == '__main__':
     guess_dict = guess_number()
-    game_file(guess_dict)
+    init_file(guess_dict)
 
 
 
